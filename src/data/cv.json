@@ -1,0 +1,658 @@
+{
+  "basics": {
+    "dob": "1972-02-12",
+    "name": "Thomas Ringling",
+    "label": "Software Developer",
+    "picture": "",
+    "email": "thomas@ringling.info",
+    "phone": "+45 6169 9351",
+    "website": "http://ringling.info",
+    "location": {
+      "address": "Nærum Hovedgade 15 st. th. D",
+      "postalCode": "2850",
+      "city": "Nærum",
+      "countryCode": "DK",
+      "region": "Rudersdal"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "thomasringling",
+        "url": "http://twitter.com/thomasringling"
+      },
+      {
+        "network": "Linkedin",
+        "username": "thomasringling",
+        "url": "http://linkedin.com/thomasringling"
+      }
+    ],
+    "summary":[
+      "Living in Nærum with my wife Louise and my daughter Hannah.",
+      "Lifetime learner and polyglot software craftsman with a great love for physical training, music and nature.",
+      "A long experience implementing and teaching agile methodologies and principles.",
+      "With over 19 years of experience on software development, I span a variety of different technologies, paradigms and programming languages.",
+      "I have had many roles within and outside IT, such as developer, coach, teacher, architect, project manager, scrum master, product owner and team lead",
+      "As I still do software development, I keep up with new technologies and therefore thrive in environentments and cultures who value competences, innovation and creativity."
+    ]
+  },
+  "languages": [
+    {
+      "language": "Danish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "German",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "educations": [
+    {
+      "institution": "IT-University, Copenhagen",
+      "area": "Software Development",
+      "studyType": "Diploma in Information Technology",
+      "startDate": "2002",
+      "endDate": "2005"
+    },
+    {
+      "institution": "Lyngby Uddannelsescenter",
+      "area": "Software Development",
+      "studyType": "Datamatician",
+      "startDate": "1998",
+      "endDate": "2000"
+    },
+    {
+      "institution": "Deutsches Gymnasium für Nordschleswig",
+      "area": "Mathematics and english",
+      "studyType": "High school",
+      "startDate": "1988",
+      "endDate": "1991"
+    }
+  ],
+  "achievements": {
+    "_description":"Contains a list of additional information about the various achievements of an individual, such as participation to conferences, workshops, memberships to organisations, list of publications, etc.",
+    "_types": [
+        "honors_awards",
+        "presentations",
+        "publications",
+        "projects",
+        "citations",
+        "memberships",
+        "conferences",
+        "seminars",
+        "workshops",
+        "references",
+        "signature_equivalent",
+        "courses",
+        "certifications",
+        "teaching"
+    ],
+    "list": [
+      {
+        "type": "conferences",
+        "title": "Agile Coach Camp 2019",
+        "description": "",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "Elixir Conf Europe 2018",
+        "description": "",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "Agile Coach Camp 2017",
+        "description": "",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "Agile Coach Camp 2016",
+        "description": "",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "Agile Coach Camp 2015",
+        "description": "",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
+        "title": "Professional Scrum Master - PSM I",
+        "description": "Issued May 2013",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
+        "title": "Agile Foundation – Leadership Focus - DSDM",
+        "description": "Issued Apr 2012",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
+        "title": "Certified SAFe Agilist",
+        "description": "Issued June 2016",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Product Owner 360",
+        "description": "2016 and june 2019 - goAgile",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Graphical Facilitation",
+        "description": "2016 - Future Factory",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Lead for Greatness",
+        "description": "2018 - goAgile",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Agile Project Leadership",
+        "description": "2012 - goAgile",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Stillwater Leadership",
+        "description": "2016 - Stillwater",
+        "documentation": ""
+      },
+      {
+        "type": "teaching",
+        "period": "2015-2017",
+        "title": "TDD practices in OO",
+        "description": "TDD with Java and/or C#"
+      },
+      {
+        "type": "teaching",
+        "period": "2015-2018",
+        "title": "Coderetreat",
+        "description": "Facilitation of 'Coderetreat' events(https://www.coderetreat.org/)"
+      },
+      {
+        "type": "teaching",
+        "period": "2016",
+        "title": "Scrum intro",
+        "description": "Instructor"
+      },
+      {
+        "type": "teaching",
+        "period": "2016-2019",
+        "title": "Agile principles and software development practices",
+        "description": "XP, Scrum, Kanban, TDD, BDD ..."
+      },
+      {
+        "type": "teaching",
+        "period": "2018",
+        "title": "Privacy By Default/Design",    
+        "description": "GDPR and software development"
+      },
+      {
+        "type": "teaching",
+        "period": "2008-2009",
+        "title": "Army Medic course (HLS 408)",    
+        "description": "Instructor"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "RabbitMQ",
+      "type": "message-broker",
+      "proficiencyLevel": 1,
+      "firstUsed": "2012",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "My goto message broker, be it via Docker, CloudAMQP or on-prem. Programmed in Erlang ;)"
+    },
+    {
+      "name": "ActiveMQ",
+      "type": "message-broker",
+      "proficiencyLevel": 4,
+      "firstUsed": "2016",
+      "lastUsed": "2017",
+      "acquiredDuring": "",
+      "description": "Used it in a PoC, a nice alternative to RabbitMQ"
+    },
+    {
+      "name": "DB2",
+      "type": "database",
+      "proficiencyLevel": 3,
+      "firstUsed": "2006",
+      "lastUsed": "2017",
+      "acquiredDuring": "",
+      "description": "Only used it as a developer, never tried to set-up one"
+    },
+    {
+      "name": "Oracle",
+      "type": "database",
+      "proficiencyLevel": 3,
+      "firstUsed": "1999",
+      "lastUsed": "2007",
+      "acquiredDuring": "",
+      "description": "Used it in school and on some of my jobs"
+    },
+    {
+      "name": "Mysql/MarieDB",
+      "type": "database",
+      "proficiencyLevel": 2,
+      "firstUsed": "2001",
+      "lastUsed": "2012",
+      "acquiredDuring": "",
+      "description": "The first RDBMS I ever installed"
+    },
+    {
+      "name": "MSSQL",
+      "type": "database",
+      "proficiencyLevel": 2,
+      "firstUsed": "2007",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "The preferred RDBMS when in .NET-country."
+    },
+    {
+      "name": "CouchDB",
+      "type": "database",
+      "proficiencyLevel": 1,
+      "firstUsed": "2014",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "I love the change feeds, db replication, stability and REST API of this NoSQL DB. Also programmed in Erlang ;)"
+    },
+    {
+      "name": "MongoDB",
+      "type": "database",
+      "proficiencyLevel": 2,
+      "firstUsed": "2014",
+      "lastUsed": "2015",
+      "acquiredDuring": "",
+      "description": "Fast NoSQL"
+    },
+    {
+      "name": "Redis",
+      "type": "database",
+      "proficiencyLevel": 2,
+      "firstUsed": "2014",
+      "lastUsed": "2018",
+      "acquiredDuring": "",
+      "description": "Key-value store, used as an alternative to Memcached"
+    },
+    {
+      "name": "Memcached",
+      "type": "database",
+      "proficiencyLevel": 2,
+      "firstUsed": "2014",
+      "lastUsed": "2018",
+      "acquiredDuring": "",
+      "description": "Key-value store cache"
+    },
+    {
+      "name": "ElasticSearch",
+      "type": "database",
+      "proficiencyLevel": 3,
+      "firstUsed": "2013",
+      "lastUsed": "2015",
+      "acquiredDuring": "",
+      "description": "NoSQL and Not_Only_A_Database - actually do not use it as a DB but as superfast search engine"
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "database",
+      "proficiencyLevel": 1,
+      "firstUsed": "2012",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "My preferred open-source RDBMS database"
+    },
+    {
+      "name": "Ruby on Rails(RoR)",
+      "type": "web-framework",
+      "proficiencyLevel": 1,
+      "firstUsed": "2012",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "My first meeting with Ruby and the power of metaprogramming"
+    },
+    {
+      "name": "Phoenix",
+      "type": "web-framework",
+      "proficiencyLevel": 1,
+      "firstUsed": "2015",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "A functional web framework build on Elixir. Simplicity, stability, distribution, channels and performance baked in. Some things, just come with the language and platform(VM) itself"
+    },
+    {
+      "name": "Vue.js",
+      "type": "javascript-framework",
+      "firstUsed": "2015",
+      "lastUsed": "2019",
+      "proficiencyLevel": 1,
+      "acquiredDuring": "",
+      "description": "Adopted this framework very early, as it combines the simplicity of Ractive.js and a bunch of the good features from Angular, React and even Elm"
+    },
+    {
+      "name": "Elm",
+      "type": "javascript-framework",
+      "firstUsed": "2017",
+      "lastUsed": "2019",
+      "proficiencyLevel": 4,
+      "acquiredDuring": "",
+      "description": "After working with javascript for many years, I like the purity of a Haskell-like language and the 'no runtime errors' part"
+    },
+    {
+      "name": "Angular",
+      "type": "javascript-framework",
+      "firstUsed": "2014",
+      "lastUsed": "2017",
+      "proficiencyLevel": 2,
+      "acquiredDuring": "",
+      "description": "Been working with AngularJS and Angular(2.0)"
+    },
+    {
+      "name": "Ractive.js",
+      "type": "javascript-framework",
+      "firstUsed": "2014",
+      "lastUsed": "2017",
+      "proficiencyLevel": 2,
+      "acquiredDuring": "",
+      "description": "Lightweight javascript framework. Even though I primarily use Vue.js now, I like the simplicity of Ractive.js"
+    },
+    {
+      "name": "Ruby",
+      "type": "programming-language",
+      "proficiencyLevel": 1,
+      "firstUsed": "2012",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "My goto scripting language. Also using Crystal(https://crystal-lang.org/) combining performance and Ruby expressiveness"
+    },
+    {
+      "name": "Elixir",
+      "type": "programming-language",
+      "proficiencyLevel": 1,
+      "firstUsed": "2014",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "My goto dynamic, functional, distributed language. Together with Erlang, Elixir opened my eyes for the world of distributed systems"
+    },
+    {
+      "name": "C#",
+      "type": "programming-language",
+      "proficiencyLevel": 2,
+      "firstUsed": "2007",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "'Lingua franca' in the .NET world. But you should take a look at F# as well"
+    },
+    {
+      "name": "Java",
+      "type": "programming-language",
+      "proficiencyLevel": 1,
+      "firstUsed": "1998",
+      "lastUsed": "2017",
+      "acquiredDuring": "",
+      "description": "Learned it in school and have been using throughout my professional carrier"
+    },
+    {
+      "name": "Elm",
+      "type": "programming-language",
+      "proficiencyLevel": 4,
+      "firstUsed": "2017",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "Fun Haskell-like, no-runtime errors, javascript alternative, like typescript, purescript or coffeescript - however in functional wrapping"
+    },
+    {
+      "name": "Javascript",
+      "type": "programming-language",
+      "proficiencyLevel": 2,
+      "firstUsed": "2001",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "As I have been doing a lot of frontend development, there is no way to get around this one"
+    },
+    {
+      "name": "Typescript",
+      "type": "programming-language",
+      "proficiencyLevel": 3,
+      "firstUsed": "2017",
+      "lastUsed": "2017",
+      "acquiredDuring": "",
+      "description": "Java/C# in the frontend"
+    }
+  ],
+  "experiences": [
+    {
+      "year": "2019",
+      "startDate": "June 2019",
+      "endDate": "Present",
+      "companyName": "xwave",
+      "companyLogo": "assets/img/xwave.png",
+      "website": "http://company.com",
+      "title": "Partner",
+      "roles": "Software Developer",
+      "highlights": [
+        "Started the company"
+      ],
+      "summary": "Quam lectus viverra temporibus nulla id, et a quis convallis cumque, vitae diam mollis consectetuer, amet justo justo justo maecenas, posuere vestibulum justo auctor erat vestibulum. Praesent laoreet sed in quisque, interdum praesent est sapien sit egestas arcu, rutrum ultrices maecenas eget class."
+    },
+    {
+      "year": "2018",
+      "startDate": "Apr 2018",
+      "endDate": "June 2019",
+      "companyName": "Danske Spil A/S",
+      "companyLogo": "assets/img/ds.png",
+      "title": "Freelance consultant",
+      "roles": "Agile Coach and Scrum Master",
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2016",
+      "startDate": "Okt 2016",
+      "endDate": "Present",
+      "companyName": "PrivacyTree",
+      "companyLogo": "assets/img/privactree_logo.png",
+      "title": "Partner",
+      "roles": "SW Architecture, Development, UI", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2017",
+      "startDate": "Jan 2017",
+      "endDate": "Dec 2017",
+      "companyName": "MP Pension",
+      "companyLogo": "assets/img/mp.png",
+      "title": "Freelance consultant",
+      "roles": "Agile Coach and Scrum Master", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2016",
+      "startDate": "May 2016",
+      "endDate": "Nov 2016",
+      "companyName": "Nykredit",
+      "companyLogo": "assets/img/nykredit.png",
+      "title": "Freelance consultant",
+      "roles": "Software Developer", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2016",
+      "startDate": "Jan 2016",
+      "endDate": "Apr 2016",
+      "companyName": "Widex A/S",
+      "companyLogo": "assets/img/widex.png",
+      "title": "Freelance consultant",
+      "roles": "Solution delivery manager", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2015",
+      "startDate": "May 2015",
+      "endDate": "Dec 2015",
+      "companyName": "Macellum",
+      "companyLogo": "assets/img/macellum.png",
+      "title": "Partner",
+      "roles": "Lorem ipsum...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2012",
+      "startDate": "Sep 2012",
+      "endDate": "May 2015",
+      "companyName": "Lokalebasen.dk A/S",
+      "companyLogo": "assets/img/lb.png",
+      "title": "Freelance consultant",
+      "roles": "Product Owner, Scrum Master, Architect, Software Developer", 
+      "summary": "Lorem ipsum..."
+    },
+
+    {
+      "year": "2011",
+      "startDate": "Aug 2011",
+      "endDate": "Jan 2012",
+      "companyName": "Forsvaret",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2006",
+      "startDate": "Mar 2005",
+      "endDate": "May 2006",
+      "companyName": "Omada",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2007",
+      "startDate": "Dec 2007",
+      "endDate": "May 2006",
+      "companyName": "Nykredit",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2012",
+      "startDate": "Jan 2012",
+      "endDate": "Sep 2012",
+      "companyName": "Nykredit",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2001",
+      "startDate": "Sep 2001",
+      "endDate": "Dec 2000",
+      "companyName": "Ericsson",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2011",
+      "startDate": "Jun 2009",
+      "endDate": "Aug 2011",
+      "companyName": "Forca",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2009",
+      "startDate": "Nov 2008",
+      "endDate": "Apr 2009",
+      "companyName": "Forsvaret",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2005",
+      "startDate": "Apr 2003",
+      "endDate": "Mar 2005",
+      "companyName": "XponCard",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2008",
+      "startDate": "Jan 2008",
+      "endDate": "Sep 2008",
+      "companyName": "Forca",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    },
+    {
+      "year": "2003",
+      "startDate": "Aug 2001",
+      "endDate": "Mar 2003",
+      "companyName": "Nokia",
+      "companyLogo": null,
+      "title": "...",
+      "roles": "...", 
+      "summary": "Lorem ipsum..."
+    }
+
+
+  ],
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Nature",
+        "Guitar"
+      ]
+    },
+    {
+      "name": "Training",
+      "keywords": [
+        "Martial Arts",
+        "Crossfit",
+        "Physical training"
+      ]
+    }  
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ],
+  "publications": [
+    {
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "website": "http://publication.com",
+    "summary": "Description..."
+    }
+  ]
+}

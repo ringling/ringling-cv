@@ -1,11 +1,12 @@
 <template>
   <Layout>
 
-    <div class="flex  flex-wrap">
+    <div class="flex flex-wrap">
+
       
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
-        <Introduction class="section" />
-        <Experiences class="section" :items="newerExperiences"/>
+        <Introduction class="section" :cv="myCV" />
+        <Experiences class="section" :items="newestExperiences"/>
         <ItemList class="section" :items="olderExperiences"/>
         <Items itemType="Courses" :items="courses" class="section" align="sm:text-right"/>
       </div>
@@ -18,6 +19,10 @@
         <ItemList class="section" :items="languages" title="Languages"/>
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
       </div>
+      <pre>
+
+        {{myCV}}
+      </pre>
 
     </div>
 
@@ -25,6 +30,8 @@
 </template>
 
 <script>
+
+import myCV from '~/data/cv.json'
 
 import Introduction from '~/components/Introduction.vue'
 import Skills from '~/components/Skills.vue'
@@ -42,57 +49,122 @@ export default {
     ItemList,
     Items
   },
+  computed: {
+
+    olderExperiences: function() {
+
+      const experiences = this.myCV.experiences;
+
+      let yearFilter = (exp) => { return exp.year <= "2010"; }
+
+      const sortByEndYear = (aExp, bExp) => {
+        let aYear = aExp.year; // aExp.endDate.match(/(\d{4})/g);
+        let bYear = bExp.year; //.endDate.match(/(\d{4})/g);
+
+        if(aYear > bYear)
+          return -1;
+        else if(aYear < bYear)
+          return 1;
+        else
+          return 0;
+      }
+
+
+
+      let expMapper = (exp) => {
+        return { title: exp.companyName, subtitle: exp.subtitle, period: exp.startDate + " - " + exp.endDate, summary: exp.summary };
+      }
+
+      return experiences.filter(yearFilter).sort(sortByEndYear).map(expMapper);
+
+    },
+
+
+    newestExperiences: function() {
+
+      const experiences = this.myCV.experiences;
+
+      let yearFilter = (exp) => { return exp.year > "2010"; }
+
+      const sortByEndYear = (aExp, bExp) => {
+        let aYear = aExp.year; // aExp.endDate.match(/(\d{4})/g);
+        let bYear = bExp.year; //.endDate.match(/(\d{4})/g);
+
+        if(aYear > bYear)
+          return -1;
+        else if(aYear < bYear)
+          return 1;
+        else
+          return 0;
+      }
+
+      return experiences.filter(yearFilter).sort(sortByEndYear);
+
+    },
+    languages: function() {
+      const languages = this.myCV.languages;
+      let mapper = (lang) => {
+        return { title: lang.language, subtitle: lang.fluency };
+      }
+      return languages.map(mapper); 
+    },
+    courses: function() {
+      const achievements = this.myCV.achievements.list;
+      let courseFilter = (ach) => { return ach.type == "courses"; }
+      let courseMapper = (course) => {
+        return { title: course.title, subtitle: course.description };
+      }
+      return achievements.filter(courseFilter).map(courseMapper);
+    },
+    certifications: function() {
+      const achievements = this.myCV.achievements.list;
+      let certFilter = (ach) => { return ach.type == "certifications"; }
+      let certMapper = (cert) => {
+        return { title: cert.title, subtitle: cert.description };
+      }
+      return achievements.filter(certFilter).map(certMapper);
+    }
+  },
+  methods: {
+   
+
+  },
   data () {
     return {
-      certifications: [
-        {title: "Professional Scrum Master - PSM I", subtitle: "2013 - scrum.org"},
-        {title: "Certified SAFe Agilist", subtitle: "2016 - SAFe Alliance"},
-        {title: "Agile Foundation – Leadership Focus", subtitle: "2012 - DSDM"}
-      ],
-      courses: [
-        {title: "Product Owner 360", subtitle: "2016, 2019 - goAgile "},
-        {title: "Graphical Facilitation", subtitle: "2016, Future Factory"},
-        {title: "Stillwater Leadership", subtitle: "2016, Stillwater"},
-        {title: "Lead for Greatness", subtitle: "2018, goAgile"},
-        {title: "Agile Project Leadership", subtitle: "2012, goAgile"}
-      ],
-      languages: [
-        {title: "Danish", subtitle: "Native speaker"},
-        {title: "German", subtitle: "Native speaker"},
-        {title: "English", subtitle: "Fluent"}
-      ],
-      olderExperiences: [
-        {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-        {title: "Omada", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-        {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", },
-        {title: "Nokia", subtitle: "Developer", period: "2001 - 2003", },
-        {title: "Ericsson", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-        {title: "XPonCard", subtitle: "Developer", period: "2001 - 2003", },
-        {title: "Forca", subtitle: "Developer", period: "2001 - 2003"}
-      ],
-      newerExperiences: [
-        {
-          title: "Agile coach | Danske Spil",
-          period: "april 2018 - june 2019",
-          summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-        },
-        {
-          title: "Agile coach | Danske Spil", 
-          period: "april 2018 - june 2019",
-          summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-        },
-        {
-          title: "Agile coach | Danske Spil", 
-          period: "april 2018 - june 2019",
-          summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-        }
-        ,
-        {
-          title: "Agile coach | Danske Spil", 
-          period: "april 2018 - june 2019",
-          summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-        }
-      ]
+      myCV,
+
+      // olderExperiences: [
+      //   {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
+      //   {title: "Omada", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
+      //   {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", },
+      //   {title: "Nokia", subtitle: "Developer", period: "2001 - 2003", },
+      //   {title: "Ericsson", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
+      //   {title: "XPonCard", subtitle: "Developer", period: "2001 - 2003", },
+      //   {title: "Forca", subtitle: "Developer", period: "2001 - 2003"}
+      // ],
+      // newerExperiencesx: [
+      //   {
+      //     title: "Agile coach | Danske Spil",
+      //     period: "april 2018 - june 2019",
+      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
+      //   },
+      //   {
+      //     title: "Agile coach | Danske Spil", 
+      //     period: "april 2018 - june 2019",
+      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
+      //   },
+      //   {
+      //     title: "Agile coach | Danske Spil", 
+      //     period: "april 2018 - june 2019",
+      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
+      //   }
+      //   ,
+      //   {
+      //     title: "Agile coach | Danske Spil", 
+      //     period: "april 2018 - june 2019",
+      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
+      //   }
+      // ]
     }
   },
   metaInfo: {

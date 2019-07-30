@@ -2,7 +2,7 @@
 <div class="experiences">
 
     <h2 class="sm:text-right">Experience</h2>
-    <Experience :title="item.title" :period="item.period" :summary="item.summary" v-for="item in items" />
+    <Experience :title="item.title + ' | ' + item.companyName" :period="item.startDate + ' - ' + item.endDate" :summary="item.summary" v-for="item in items" />
   
   </div>
   
