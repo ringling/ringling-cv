@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  text-transform: uppercase;
+  @apply text-gray-600 text-xl font-semibold;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+
+
