@@ -19,11 +19,7 @@
         <ItemList class="section" :items="languages" title="Languages"/>
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
       </div>
-      <pre>
-
-        {{myCV}}
-      </pre>
-
+  
     </div>
 
   </Layout>
