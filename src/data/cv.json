@@ -467,7 +467,7 @@
       "companyLogo": "assets/img/privactree_logo.png",
       "title": "Partner",
       "roles": "SW Architecture, Development, UI", 
-      "summary": "Courses, training and software development in relation with the General Data Protection Regulation(GDPR)"
+      "summary": "Courses, training and software development in relation to the General Data Protection Regulation(GDPR)"
     },
     {
       "year": "2017",
@@ -487,7 +487,7 @@
       "companyLogo": "assets/img/nykredit.png",
       "title": "Consultant",
       "roles": "Software Developer", 
-      "summary": "Java developer of RESTful microservices.<br> Architectural proposal describing a possible message driving REST level 4 solution. Sparring with the team scrum master and all the product owners, concerning agile SW-development in praksis"
+      "summary": "Java developer of RESTful microservices.<br> Architectural proposals, sparring with the team scrum master and product owners, concerning agile SW-development in practice"
     },
     {
       "year": "2016",
