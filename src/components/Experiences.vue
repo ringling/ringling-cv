@@ -1,7 +1,7 @@
 <template>
 <div class="experiences">
 
-    <img src="../assets/developer.png" alt="">
+    <img class="sectionImg" src="../assets/experience.png" alt="">
     <h2 class="sm:text-right">Experience</h2>
     <Experience :title="item.title + ' | ' + item.companyName" :period="item.startDate + ' - ' + item.endDate" :summary="item.summary" v-for="item in items" />
   

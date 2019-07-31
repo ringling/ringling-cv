@@ -13,8 +13,8 @@
         <div class="title">Software professional</div>
       </div>
       
-      <div class="text-gray-700 px-4 py-1 m-2 text-center">
-        <g-image src="~/assets/portrait.png" width="300" fit="contain"/>
+      <div class=" px-4 py-1 m-2">
+        <g-image class="portraitImg" src="~/assets/profile.png" width="300"/>
       </div>
       
       <div class="text-gray-700 text-center px-4 py-1 m-2">

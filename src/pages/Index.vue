@@ -6,17 +6,18 @@
       
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
         <Introduction class="section" :cv="myCV" />
+        <Skills class="section"/>
         <Experiences class="section" :items="newestExperiences"/>
         <ItemList class="section" :items="olderExperiences"/>
-        <Items itemType="Courses" :items="courses" class="section" align="sm:text-right"/>
       </div>
            
       <div class="line flex-none text-gray-800 text-center px-0 py-0 m-0 invisible sm:invisible md:visible lg:visible xl:visible"></div>
 
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
-        <Skills class="section"/>
         <Educations class="section"/>
+        <img class="sectionImg" src="../assets/languages.png" alt="">
         <ItemList class="section" :items="languages" title="Languages"/>
+        <Items itemType="Courses" :items="courses" class="section" align="sm:text-left"/>
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
       </div>
   

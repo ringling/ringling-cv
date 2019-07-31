@@ -15,3 +15,7 @@ p {
   @apply text-gray-600 text-sm;
 }
 
+.sectionImg {
+  max-height: 200px;
+}
+
