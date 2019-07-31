@@ -32,9 +32,10 @@
   </div>
 
 
-  <footer class="footer flex justify-center align-bottom h-32">
+    <footer class="footer flex justify-center align-bottom h-32">
     
     <span class="inline-block align-baseline self-end">Nærum Hovedgade 15 st th D, 2850 Nærum | +45 61 69 93 51 | thomas@ringling.info | www.ringling.info </span>
+
   </footer>
 
 </div>
@@ -53,9 +54,9 @@ header {
 }
 
 footer {
-  background: linear-gradient(to top, #AECAEF, white);
+  /* background: linear-gradient(to top, rgb(183, 231, 144), white); */
   padding-bottom: 10px;
-  @apply text-gray-700 p-2;
+  @apply text-gray-700 p-2 text-sm;
 }
 
 
@@ -65,10 +66,7 @@ img {
   margin-right: auto;
 }
 
-.module-border-wrap {
-  background: linear-gradient(to right, #AECAEF, #EFAED6);
-  padding: 2px;
-}
+
 
 .name {
   background: transparent;

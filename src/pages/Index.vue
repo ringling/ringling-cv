@@ -68,7 +68,7 @@ export default {
 
 
       let expMapper = (exp) => {
-        return { title: exp.companyName, subtitle: exp.subtitle, period: exp.startDate + " - " + exp.endDate, summary: exp.summary };
+        return { title: exp.companyName, subtitle: exp.title, period: exp.startDate + " - " + exp.endDate, summary: exp.summary };
       }
 
       return experiences.filter(yearFilter).sort(sortByEndYear).map(expMapper);

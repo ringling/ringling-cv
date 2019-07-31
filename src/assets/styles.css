@@ -11,5 +11,7 @@ h2 {
   margin-top: 30px;
 }
 
-
+p {
+  @apply text-gray-600 text-sm;
+}
 

@@ -27,7 +27,7 @@
       }
     ],
     "summary":[
-      "Living in Nærum with my wife Louise and my daughter Hannah.",
+      "Living north of Copenhagen with my wife and my daughter.",
       "Lifetime learner and polyglot software craftsman with a great love for physical training, music and nature.",
       "A long experience implementing and teaching agile methodologies and principles.",
       "With over 19 years of experience on software development, I span a variety of different technologies, paradigms and programming languages.",
@@ -455,9 +455,9 @@
       "endDate": "June 2019",
       "companyName": "Danske Spil A/S",
       "companyLogo": "assets/img/ds.png",
-      "title": "Freelance consultant",
+      "title": "Consultant",
       "roles": "Agile Coach and Scrum Master",
-      "summary": "Lorem ipsum..."
+      "summary": "Agil coach in the BI department, responsible for the shift to more agile processes. Facilitating team workshops and introduction to scrum. Later scrum master of up to 3 teams"
     },
     {
       "year": "2016",
@@ -467,7 +467,7 @@
       "companyLogo": "assets/img/privactree_logo.png",
       "title": "Partner",
       "roles": "SW Architecture, Development, UI", 
-      "summary": "Lorem ipsum..."
+      "summary": "Courses, training and software development in relation with the General Data Protection Regulation(GDPR)"
     },
     {
       "year": "2017",
@@ -475,9 +475,9 @@
       "endDate": "Dec 2017",
       "companyName": "MP Pension",
       "companyLogo": "assets/img/mp.png",
-      "title": "Freelance consultant",
+      "title": "Consultant",
       "roles": "Agile Coach and Scrum Master", 
-      "summary": "Lorem ipsum..."
+      "summary": "Agil coach in the development department, scrum master and temporary product owner. A little front-end development in .NET(Angular & TypeScript)"
     },
     {
       "year": "2016",
@@ -485,9 +485,9 @@
       "endDate": "Nov 2016",
       "companyName": "Nykredit",
       "companyLogo": "assets/img/nykredit.png",
-      "title": "Freelance consultant",
+      "title": "Consultant",
       "roles": "Software Developer", 
-      "summary": "Lorem ipsum..."
+      "summary": "Java developer of RESTful microservices.<br> Architectural proposal describing a possible message driving REST level 4 solution. Sparring with the team scrum master and all the product owners, concerning agile SW-development in praksis"
     },
     {
       "year": "2016",
@@ -495,9 +495,9 @@
       "endDate": "Apr 2016",
       "companyName": "Widex A/S",
       "companyLogo": "assets/img/widex.png",
-      "title": "Freelance consultant",
-      "roles": "Solution delivery manager", 
-      "summary": "Lorem ipsum..."
+      "title": "Consultant",
+      "roles": "Solution delivery manager, scrum master", 
+      "summary": "Responsible for implementing an more agile delivery pipeline. Scrum master for 2 teams"
     },
     {
       "year": "2015",
@@ -506,8 +506,8 @@
       "companyName": "Macellum",
       "companyLogo": "assets/img/macellum.png",
       "title": "Partner",
-      "roles": "Lorem ipsum...", 
-      "summary": "Lorem ipsum..."
+      "roles": "Developer", 
+      "summary": "Software solution for the fishing market"
     },
     {
       "year": "2012",
@@ -515,19 +515,58 @@
       "endDate": "May 2015",
       "companyName": "Lokalebasen.dk A/S",
       "companyLogo": "assets/img/lb.png",
-      "title": "Freelance consultant",
+      "title": "Consultant",
       "roles": "Product Owner, Scrum Master, Architect, Software Developer", 
-      "summary": "Lorem ipsum..."
+      "summary": "<h5>Product Owner</h5><h6>Jul 2014 – May 2015</h6><p>My role was primarily Product Owner, but I also acted as SW architect and daily manager of the development team. Hereunder performing recruitment of further staff and coaching of the new scrum master. I furthermore facilitated all workshops within the company</p><h5>Projectmanager/Scrum Master</h5><h6>Feb 2012 – Jul 2014</h6>Scrum master/Project manager/Facilitator: Responsible for introducing the agile transformation via SCRUM to the development team and the rest of the company.<br>SW architect: Designing the new distributed architecture in cooperation with the dev team.<br>Developer: Ruby(on Rails), Elixir/Erlang"
     },
-
+    {
+      "year": "2012",
+      "startDate": "Jan 2012",
+      "endDate": "Sep 2012",
+      "companyName": "Nykredit",
+      "companyLogo": null,
+      "title": "Consultant",
+      "roles": "Developer", 
+      "summary": "My role as a Java developer, was developing web services in J2EE supporting a new loan/financing product. Using technologies, such as J2EE, WebServices, Oracle WLS"
+    },
     {
       "year": "2011",
       "startDate": "Aug 2011",
       "endDate": "Jan 2012",
       "companyName": "Forsvaret",
       "companyLogo": null,
-      "title": "...",
+      "title": "Force Protection",
+      "roles": "", 
+      "summary": "ISAF 12 / Herrick 15"
+    },
+    {
+      "year": "2011",
+      "startDate": "Jun 2009",
+      "endDate": "Aug 2011",
+      "companyName": "Forca",
+      "companyLogo": null,
+      "title": "Consultant",
+      "roles": "Developer, Business Analyst", 
+      "summary": "My role as a team lead on a 3 man team, was defining and developing the technical architecture for integrating pension payout with MS Dynamics AX through Biztalk.<br>Technologies: C# 4.0, ASP.NET, Edlund LifeCore"
+    },
+    {
+      "year": "2009",
+      "startDate": "Nov 2008",
+      "endDate": "Apr 2009",
+      "companyName": "Forsvaret",
+      "companyLogo": null,
+      "title": "Instructor",
       "roles": "...", 
+      "summary": "Instructor at medics course - 'Sygehjælper kursus HLS 408'"
+    },
+    {
+      "year": "2007",
+      "startDate": "Dec 2007",
+      "endDate": "May 2006",
+      "companyName": "Nykredit",
+      "companyLogo": null,
+      "title": "Consultant",
+      "roles": "Developer", 
       "summary": "Lorem ipsum..."
     },
     {
@@ -536,28 +575,8 @@
       "endDate": "May 2006",
       "companyName": "Omada",
       "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
-      "summary": "Lorem ipsum..."
-    },
-    {
-      "year": "2007",
-      "startDate": "Dec 2007",
-      "endDate": "May 2006",
-      "companyName": "Nykredit",
-      "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
-      "summary": "Lorem ipsum..."
-    },
-    {
-      "year": "2012",
-      "startDate": "Jan 2012",
-      "endDate": "Sep 2012",
-      "companyName": "Nykredit",
-      "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
+      "title": "Developer",
+      "roles": "Developer, Solution Architect", 
       "summary": "Lorem ipsum..."
     },
     {
@@ -566,28 +585,8 @@
       "endDate": "Dec 2000",
       "companyName": "Ericsson",
       "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
-      "summary": "Lorem ipsum..."
-    },
-    {
-      "year": "2011",
-      "startDate": "Jun 2009",
-      "endDate": "Aug 2011",
-      "companyName": "Forca",
-      "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
-      "summary": "Lorem ipsum..."
-    },
-    {
-      "year": "2009",
-      "startDate": "Nov 2008",
-      "endDate": "Apr 2009",
-      "companyName": "Forsvaret",
-      "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
+      "title": "Consultant",
+      "roles": "Developer, Architect", 
       "summary": "Lorem ipsum..."
     },
     {
@@ -596,8 +595,8 @@
       "endDate": "Mar 2005",
       "companyName": "XponCard",
       "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
+      "title": "Developer",
+      "roles": "Developer, Architect, Technical project manager", 
       "summary": "Lorem ipsum..."
     },
     {
@@ -606,8 +605,8 @@
       "endDate": "Sep 2008",
       "companyName": "Forca",
       "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
+      "title": "Consultant",
+      "roles": "Developer", 
       "summary": "Lorem ipsum..."
     },
     {
@@ -616,8 +615,8 @@
       "endDate": "Mar 2003",
       "companyName": "Nokia",
       "companyLogo": null,
-      "title": "...",
-      "roles": "...", 
+      "title": "Consultant",
+      "roles": "Requalification manager, TRUE test responsible", 
       "summary": "Lorem ipsum..."
     }
 
