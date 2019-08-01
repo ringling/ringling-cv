@@ -5,12 +5,31 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addContentType }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api
-  })
+const cv = require('./src/data/cv.json')
 
+module.exports = function (api) {
+
+  api.loadSource(store => {
+    const contentType = store.addContentType({
+      typeName: 'Skills'
+    })
+
+    for (const skill of cv.skills) {
+      contentType.addNode({
+        name: skill.name,
+        type: skill.type,
+        proficiencyLevel: skill.proficiencyLevel,
+        proficiencyLevel: skill.proficiencyLevel,
+        firstUsed: skill.firstUsed,
+        lastUsed: skill.lastUsed,
+        acquiredDuring: skill.acquiredDuring,
+        description: skill.description
+      })
+    }
+  })
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
   })
+
+
 }

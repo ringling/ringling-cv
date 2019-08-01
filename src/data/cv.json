@@ -209,6 +209,15 @@
   },
   "skills": [
     {
+      "name": "Docker",
+      "type": "containers",
+      "proficiencyLevel": 2,
+      "firstUsed": "2013",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "I use it in production, but mostly for development and when I try new stuff"
+    },
+    {
       "name": "RabbitMQ",
       "type": "message-broker",
       "proficiencyLevel": 1,
@@ -359,7 +368,7 @@
       "lastUsed": "2017",
       "proficiencyLevel": 2,
       "acquiredDuring": "",
-      "description": "Been working with AngularJS and Angular(2.0)"
+      "description": "Been working with AngularJS and Angular"
     },
     {
       "name": "Ractive.js",
@@ -405,15 +414,6 @@
       "lastUsed": "2017",
       "acquiredDuring": "",
       "description": "Learned it in school and have been using throughout my professional carrier"
-    },
-    {
-      "name": "Elm",
-      "type": "programming-language",
-      "proficiencyLevel": 4,
-      "firstUsed": "2017",
-      "lastUsed": "2019",
-      "acquiredDuring": "",
-      "description": "Fun Haskell-like, no-runtime errors, javascript alternative, like typescript, purescript or coffeescript - however in functional wrapping"
     },
     {
       "name": "Javascript",

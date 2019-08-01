@@ -4,16 +4,16 @@
 
     <div class="w-full">
       <div class="flex flex-wrap justify-between">
-        <div class="listItem" v-for="item in items">
+        <div class="listItem flex-none" v-for="item in items">
           <h3>{{item.title}}</h3>
           <h4>{{item.subtitle}}</h4>
           <p>{{item.period}}</p>
-          <a href="#" @click=" openModal(item)" v-if="item.summary"><MagnifyerIcon/></a>
-          <Modal v-show="showModal" @close="showModal = false" :item="activeItem"/>
+          <a href="#" @click=" openModal(item)" class="m-0 text-xs text-blue-500" v-if="item.summary!=null">details</a>
 
         </div>
       </div>
     </div>
+    <Modal v-show="showModal" @close="showModal = false" :item="activeItem"/>
 
   </div>
 </template>
@@ -48,7 +48,7 @@ export default {
 <style>
 
   .listItem > p { 
-    @apply text-xs text-gray-500;
+    @apply text-xs text-gray-500 mb-0;
   }
 
   .listItem > h3 {

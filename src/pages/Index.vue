@@ -2,7 +2,6 @@
   <Layout>
 
     <div class="flex flex-wrap">
-
       
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
         <Introduction class="section" :cv="myCV" />
@@ -14,15 +13,15 @@
       <div class="line flex-none text-gray-800 text-center px-0 py-0 m-0 invisible sm:invisible md:visible lg:visible xl:visible"></div>
 
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
-        <div class="consultent" v-if="this.$route.query.konsulent">
-          KONSULENT
-        </div>
-          
+                 
         <Educations class="section"/>
+        
         <img class="sectionImg" src="../assets/languages.png" alt="">
         <ItemList class="section" :items="languages" title="Languages"/>
+        
         <img class="sectionImg" src="../assets/courses.png" alt="">
         <Items itemType="Courses" :items="courses" class="section" align="sm:text-left"/>
+
         <img class="sectionImg" src="../assets/certifications.png" alt="">
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
 
@@ -34,11 +33,29 @@
     </div>
 
   </Layout>
+
 </template>
+<page-query>
+query Skills {
+  skills: allSkills {
+    edges {
+      node { 
+        name
+        type
+        description
+        firstUsed
+        lastUsed
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 
 import myCV from '~/data/cv.json'
+
+
 
 import Introduction from '~/components/Introduction.vue'
 import Skills from '~/components/Skills.vue'
@@ -60,17 +77,19 @@ export default {
 
 
     technologies: function() {
-      return [
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
-        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"}
-      ]
-    },
 
+      let mapper = (edge) => {
+        return {
+          title: edge.node.name,
+          period: edge.node.firstUsed + " - " + edge.node.lastUsed,
+          summary: edge.node.description
+        }
+      }
+
+      const skills = this.$page.skills.edges.map(mapper);
+      return skills;
+    
+    },
 
     olderExperiences: function() {
 
