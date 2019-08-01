@@ -432,7 +432,36 @@
       "lastUsed": "2017",
       "acquiredDuring": "",
       "description": "Java/C# in the frontend"
+    },
+
+    {
+      "name": "Windows",
+      "type": "operating-system",
+      "proficiencyLevel": 2,
+      "firstUsed": "1995",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "Windows 3.1, 3.11 and so on :o)"
+    },
+    {
+      "name": "OS X",
+      "type": "operating-system",
+      "proficiencyLevel": 2,
+      "firstUsed": "2005",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": ""
+    },
+    {
+      "name": "Linux",
+      "type": "operating-system",
+      "proficiencyLevel": 2,
+      "firstUsed": "1998",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": "Together with OS X, Ubuntu is my primary development OS. RedHat, Ubuntu, CoreOS, Raspbian, Mandrake, Debian"
     }
+
   ],
   "experiences": [
     {
@@ -510,7 +539,7 @@
       "summary": "Software solution for the fishing market"
     },
     {
-      "year": "2012",
+      "year": "2013",
       "startDate": "Sep 2012",
       "endDate": "May 2015",
       "companyName": "Lokalebasen.dk A/S",
