@@ -457,7 +457,7 @@
       "companyLogo": "assets/img/ds.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master",
-      "summary": "Agil coach in the BI department, responsible for the shift to more agile processes. Facilitating team workshops and introduction to scrum. Later scrum master of up to 3 teams"
+      "summary": "Agile coach and responsible for the shift to more agile processes. Facilitating team workshops and introduction to scrum. Later scrum master of up to 3 teams"
     },
     {
       "year": "2016",
@@ -477,7 +477,7 @@
       "companyLogo": "assets/img/mp.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master", 
-      "summary": "Agil coach in the development department, scrum master and temporary product owner. A little front-end development in .NET(Angular & TypeScript)"
+      "summary": "Agile coach, scrum master and temporary product owner. A little front-end development in .NET(Angular & TypeScript)"
     },
     {
       "year": "2016",
@@ -517,7 +517,8 @@
       "companyLogo": "assets/img/lb.png",
       "title": "Consultant",
       "roles": "Product Owner, Scrum Master, Architect, Software Developer", 
-      "summary": "<h5>Product Owner</h5><h6>Jul 2014 – May 2015</h6><p>My role was primarily Product Owner, but I also acted as SW architect and daily manager of the development team. Hereunder performing recruitment of further staff and coaching of the new scrum master. I furthermore facilitated all workshops within the company</p><h5>Projectmanager/Scrum Master</h5><h6>Feb 2012 – Jul 2014</h6>Scrum master/Project manager/Facilitator: Responsible for introducing the agile transformation via SCRUM to the development team and the rest of the company.<br>SW architect: Designing the new distributed architecture in cooperation with the dev team.<br>Developer: Ruby(on Rails), Elixir/Erlang"
+      "summary": "Developer, architect, product owner, scrum master and daily manager of the development team",
+      "full": "<h5>Product Owner</h5><h6>Jul 2014 – May 2015</h6><p>My role was primarily Product Owner, but I also acted as SW architect and daily manager of the development team. Hereunder performing recruitment of further staff and coaching of the new scrum master. I furthermore facilitated all workshops within the company</p><h5>Projectmanager/Scrum Master</h5><h6>Feb 2012 – Jul 2014</h6>Scrum master/Project manager/Facilitator: Responsible for introducing the agile transformation via SCRUM to the development team and the rest of the company.<br>SW architect: Designing the new distributed architecture in cooperation with the dev team.<br>Developer: Ruby(on Rails), Elixir/Erlang"
     },
     {
       "year": "2012",
