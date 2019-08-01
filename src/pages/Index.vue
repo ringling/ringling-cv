@@ -14,10 +14,16 @@
       <div class="line flex-none text-gray-800 text-center px-0 py-0 m-0 invisible sm:invisible md:visible lg:visible xl:visible"></div>
 
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
+        <div class="consultent" v-if="this.$route.query.konsulent">
+          KONSULENT
+        </div>
+          
         <Educations class="section"/>
         <img class="sectionImg" src="../assets/languages.png" alt="">
         <ItemList class="section" :items="languages" title="Languages"/>
+        <img class="sectionImg" src="../assets/courses.png" alt="">
         <Items itemType="Courses" :items="courses" class="section" align="sm:text-left"/>
+        <img class="sectionImg" src="../assets/certifications.png" alt="">
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
       </div>
   

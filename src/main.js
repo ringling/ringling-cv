@@ -8,3 +8,8 @@ import '~/assets/styles.css'
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 }
+
+
+
+
+

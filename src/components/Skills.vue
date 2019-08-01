@@ -38,8 +38,19 @@
     @apply text-gray-700 text-sm font-semibold;
   }
 
+
+
   .skill {
     min-width: 200px;
   }
+
+  @media (max-width: 640px) { 
+    .skill {
+      width: 100%;
+      @apply text-center;
+    }
+  }
+
+
 </style>
 
