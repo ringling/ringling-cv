@@ -25,8 +25,8 @@
         <img class="sectionImg" src="../assets/certifications.png" alt="">
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
 
-        <img v-if="this.$route.query.technologies" class="sectionImg" src="../assets/technologies.png" alt="">
-        <ItemList v-if="this.$route.query.technologies" title="Technologies" class="section" :items="technologies"/>
+        <img v-if="showTechnologies" class="sectionImg" src="../assets/technologies.png" alt="">
+        <ItemList v-if="showTechnologies" title="Technologies" class="section" :items="technologies"/>
 
       </div>
   
@@ -55,8 +55,6 @@ query Skills {
 
 import myCV from '~/data/cv.json'
 
-
-
 import Introduction from '~/components/Introduction.vue'
 import Skills from '~/components/Skills.vue'
 import Educations from '~/components/Educations.vue'
@@ -72,6 +70,9 @@ export default {
     Experiences,
     ItemList,
     Items
+  },
+  mounted() {
+    this.showTechnologies = this.$route.query.technologies;
   },
   computed: {
 
@@ -171,40 +172,8 @@ export default {
   },
   data () {
     return {
-      myCV,
-
-      // olderExperiences: [
-      //   {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-      //   {title: "Omada", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-      //   {title: "Forsvaret", subtitle: "Developer", period: "2001 - 2003", },
-      //   {title: "Nokia", subtitle: "Developer", period: "2001 - 2003", },
-      //   {title: "Ericsson", subtitle: "Developer", period: "2001 - 2003", summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit", },
-      //   {title: "XPonCard", subtitle: "Developer", period: "2001 - 2003", },
-      //   {title: "Forca", subtitle: "Developer", period: "2001 - 2003"}
-      // ],
-      // newerExperiencesx: [
-      //   {
-      //     title: "Agile coach | Danske Spil",
-      //     period: "april 2018 - june 2019",
-      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-      //   },
-      //   {
-      //     title: "Agile coach | Danske Spil", 
-      //     period: "april 2018 - june 2019",
-      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-      //   },
-      //   {
-      //     title: "Agile coach | Danske Spil", 
-      //     period: "april 2018 - june 2019",
-      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-      //   }
-      //   ,
-      //   {
-      //     title: "Agile coach | Danske Spil", 
-      //     period: "april 2018 - june 2019",
-      //     summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat inv debitis enim deserunt tenetur tempora, voluptates, ipsum sed quis necessitatibus magni illum repudiandae at deleniti temporibus est soluta odit"   
-      //   }
-      // ]
+      showTechnologies: false,
+      myCV
     }
   },
   metaInfo: {
