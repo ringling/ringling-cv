@@ -31,11 +31,8 @@
     <slot/>
   </div>
 
-
-    <footer class="footer flex justify-center align-bottom h-32">
-    
+  <footer class="footer flex justify-center align-bottom h-32">
     <span class="inline-block align-baseline self-end">Nærum Hovedgade 15 st th D, 2850 Nærum | +45 61 69 93 51 | thomas@ringling.info | www.ringling.info </span>
-
   </footer>
 
 </div>
@@ -95,10 +92,11 @@ img {
   @apply text-sm;
 }
 
-.year-birth, .name, .title {
+.year-birth, .title, .name {
   text-transform: uppercase;
-  @apply text-gray-600;
+  @apply text-gray-700;
 }
+
 
 
 </style>

@@ -25,6 +25,10 @@
         <Items itemType="Courses" :items="courses" class="section" align="sm:text-left"/>
         <img class="sectionImg" src="../assets/certifications.png" alt="">
         <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
+
+        <img v-if="this.$route.query.technologies" class="sectionImg" src="../assets/technologies.png" alt="">
+        <ItemList v-if="this.$route.query.technologies" title="Technologies" class="section" :items="technologies"/>
+
       </div>
   
     </div>
@@ -53,6 +57,20 @@ export default {
     Items
   },
   computed: {
+
+
+    technologies: function() {
+      return [
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"},
+        {title: "ITEM TITLE", period: "PERIOD", summary: "SUMMARY"}
+      ]
+    },
+
 
     olderExperiences: function() {
 
