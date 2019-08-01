@@ -7,6 +7,7 @@
         <Introduction class="section" :cv="myCV" />
         <Skills class="section"/>
         <Experiences class="section" :items="newestExperiences"/>
+
         <ItemList class="section" :items="olderExperiences"/>
       </div>
            
@@ -36,7 +37,7 @@
 
 </template>
 <page-query>
-query Skills {
+query Some {
   skills: allSkills {
     edges {
       node { 
@@ -45,6 +46,62 @@ query Skills {
         description
         firstUsed
         lastUsed
+      }
+    }
+  }
+
+  oldExperiences: allExperiences(sortBy: "year", order: DESC, filter: { year: { lte: "2010" }}) {
+    edges {
+      node { 
+        companyName
+        year
+        summary
+        startDate
+  			endDate
+  			companyName
+  			companyLogo
+  			website
+  			title
+  			roles
+  			highlights
+  			summary
+      }
+    }
+  }
+
+  newestExperiences: allExperiences(sortBy: "year", order: DESC, filter: { year: { gt: "2010" }}) {
+    edges {
+      node { 
+        companyName
+        year
+        summary
+        startDate
+  			endDate
+  			companyName
+  			companyLogo
+  			website
+  			title
+  			roles
+  			highlights
+  			summary
+      }
+    }
+  }
+
+  experiences: allExperiences {
+    edges {
+      node { 
+        companyName
+        summary
+        startDate
+  			endDate
+  			companyName
+  			companyLogo
+  			website
+  			title
+  			roles
+  			highlights
+  			summary
       }
     }
   }
@@ -62,6 +119,24 @@ import Experiences from '~/components/Experiences.vue'
 import ItemList from '~/components/ItemList.vue'
 import Items from '~/components/Items.vue'
 
+let skillMapper =  (edge) => {
+    return {
+      title: edge.node.name,
+      period: edge.node.firstUsed + " - " + edge.node.lastUsed,
+      summary: edge.node.description
+    }
+  };
+
+let itemListMapper = (edge) => {
+    return { 
+      title: edge.node.companyName, 
+      subtitle: edge.node.title, 
+      period: edge.node.startDate + " - " + edge.node.endDate, 
+      summary: edge.node.summary };
+  };
+
+  let experienceMapper = (edge) => { return edge.node; };
+
 export default {
   components: {
     Introduction,
@@ -75,72 +150,15 @@ export default {
     this.showTechnologies = this.$route.query.technologies;
   },
   computed: {
-
-
     technologies: function() {
-
-      let mapper = (edge) => {
-        return {
-          title: edge.node.name,
-          period: edge.node.firstUsed + " - " + edge.node.lastUsed,
-          summary: edge.node.description
-        }
-      }
-
-      const skills = this.$page.skills.edges.map(mapper);
-      return skills;
-    
+      return this.$page.skills.edges.map(skillMapper);   
     },
 
     olderExperiences: function() {
-
-      const experiences = this.myCV.experiences;
-
-      let yearFilter = (exp) => { return exp.year <= "2010"; }
-
-      const sortByEndYear = (aExp, bExp) => {
-        let aYear = aExp.year; // aExp.endDate.match(/(\d{4})/g);
-        let bYear = bExp.year; //.endDate.match(/(\d{4})/g);
-
-        if(aYear > bYear)
-          return -1;
-        else if(aYear < bYear)
-          return 1;
-        else
-          return 0;
-      }
-
-
-
-      let expMapper = (exp) => {
-        return { title: exp.companyName, subtitle: exp.title, period: exp.startDate + " - " + exp.endDate, summary: exp.summary };
-      }
-
-      return experiences.filter(yearFilter).sort(sortByEndYear).map(expMapper);
-
+      return this.$page.oldExperiences.edges.map(itemListMapper);
     },
-
-
     newestExperiences: function() {
-
-      const experiences = this.myCV.experiences;
-
-      let yearFilter = (exp) => { return exp.year > "2010"; }
-
-      const sortByEndYear = (aExp, bExp) => {
-        let aYear = aExp.year; // aExp.endDate.match(/(\d{4})/g);
-        let bYear = bExp.year; //.endDate.match(/(\d{4})/g);
-
-        if(aYear > bYear)
-          return -1;
-        else if(aYear < bYear)
-          return 1;
-        else
-          return 0;
-      }
-
-      return experiences.filter(yearFilter).sort(sortByEndYear);
-
+      return this.$page.newestExperiences.edges.map(experienceMapper);
     },
     languages: function() {
       const languages = this.myCV.languages;
@@ -167,8 +185,7 @@ export default {
     }
   },
   methods: {
-   
-
+  
   },
   data () {
     return {

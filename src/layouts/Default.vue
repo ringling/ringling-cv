@@ -14,12 +14,12 @@
         <Portrait/>        
       </div>
       <div class="text-gray-700 text-center px-4 py-1 m-2">
+        <div class="year-birth">Anno 1972</div>
+      </div>
+      <div class="text-gray-700 text-center px-4 py-1 m-2">
         <div class="title">Curriculum Vitae</div>
       </div>
       
-      <div class="text-gray-700 text-center px-4 py-1 m-2">
-        <div class="year-birth">Anno 1972</div>
-      </div>
 
     </div>
     

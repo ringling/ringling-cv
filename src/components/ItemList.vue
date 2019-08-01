@@ -8,7 +8,7 @@
           <h3>{{item.title}}</h3>
           <h4>{{item.subtitle}}</h4>
           <p>{{item.period}}</p>
-          <a href="#" @click=" openModal(item)" class="m-0 text-xs text-blue-500" v-if="item.summary!=null">details</a>
+          <a href="#" @click=" openModal(item)" class="m-0 text-xs text-blue-700" v-if="item.summary!=null">details</a>
 
         </div>
       </div>
