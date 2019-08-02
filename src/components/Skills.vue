@@ -30,15 +30,10 @@
 
 
 <style>
-
-
-
   .skill-text {
     text-transform: uppercase;
     @apply text-gray-700 text-sm font-semibold;
   }
-
-
 
   .skill {
     min-width: 200px;
@@ -50,7 +45,6 @@
       @apply text-center;
     }
   }
-
 
 </style>
 

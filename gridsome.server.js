@@ -20,6 +20,7 @@ module.exports = function (api) {
 
     for (const skill of cv.skills) {
       skillContentType.addNode({
+        active: skill.active,
         name: skill.name,
         type: skill.type,
         proficiencyLevel: skill.proficiencyLevel,
@@ -42,7 +43,8 @@ module.exports = function (api) {
         title: exp.title,
         roles: exp.roles,
         highlights: exp.highlights,
-        summary: exp.summary
+        summary: exp.summary,
+        full: exp.full
       })
     }
   })

@@ -19,3 +19,11 @@ p {
   max-height: 200px;
 }
 
+
+a {
+  @apply text-blue-600
+}
+
+a:hover {
+  @apply text-blue-800
+}

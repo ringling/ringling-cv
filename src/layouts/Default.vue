@@ -32,7 +32,8 @@
   </div>
 
   <footer class="footer flex justify-center align-bottom h-32">
-    <span class="inline-block align-baseline self-end">Nærum Hovedgade 15 st th D, 2850 Nærum | +45 61 69 93 51 | thomas@ringling.info | www.ringling.info </span>
+    
+    <span class="inline-block align-baseline self-end">Nærum Hovedgade 15 st th D, 2850 Nærum | +45 61 69 93 51 | <a href="mailto:thomas@ringling.info">thomas@ringling.info</a> | <a target="_blank" href="http://www.ringling.info">www.ringling.info</a> </span>
   </footer>
 
 </div>
@@ -66,6 +67,7 @@ footer {
   padding-bottom: 10px;
   @apply text-gray-700 p-2 text-sm;
 }
+
 
 
 img {

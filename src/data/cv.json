@@ -123,6 +123,12 @@
       },
       {
         "type": "certifications",
+        "title": "Certified SAFe Agilist",
+        "description": "Issued June 2016",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
         "title": "Professional Scrum Master - PSM I",
         "description": "Issued May 2013",
         "documentation": ""
@@ -134,21 +140,9 @@
         "documentation": ""
       },
       {
-        "type": "certifications",
-        "title": "Certified SAFe Agilist",
-        "description": "Issued June 2016",
-        "documentation": ""
-      },
-      {
         "type": "courses",
         "title": "Product Owner 360",
         "description": "2016 and june 2019 - goAgile",
-        "documentation": ""
-      },
-      {
-        "type": "courses",
-        "title": "Graphical Facilitation",
-        "description": "2016 - Future Factory",
         "documentation": ""
       },
       {
@@ -159,16 +153,23 @@
       },
       {
         "type": "courses",
-        "title": "Agile Project Leadership",
-        "description": "2012 - goAgile",
-        "documentation": ""
-      },
-      {
-        "type": "courses",
         "title": "Stillwater Leadership",
         "description": "2016 - Stillwater",
         "documentation": ""
       },
+      {
+        "type": "courses",
+        "title": "Graphical Facilitation",
+        "description": "2016 - Future Factory",
+        "documentation": ""
+      },
+      
+      {
+        "type": "courses",
+        "title": "Agile Project Leadership",
+        "description": "2012 - goAgile",
+        "documentation": ""
+      }, 
       {
         "type": "teaching",
         "period": "2015-2017",
@@ -209,6 +210,7 @@
   },
   "skills": [
     {
+      "active": true,
       "name": "Docker",
       "type": "containers",
       "proficiencyLevel": 2,
@@ -218,6 +220,7 @@
       "description": "I use it in production, but mostly for development and when I try new stuff"
     },
     {
+      "active": true,
       "name": "RabbitMQ",
       "type": "message-broker",
       "proficiencyLevel": 1,
@@ -227,6 +230,7 @@
       "description": "My goto message broker, be it via Docker, CloudAMQP or on-prem. Programmed in Erlang ;)"
     },
     {
+      "active": false,
       "name": "ActiveMQ",
       "type": "message-broker",
       "proficiencyLevel": 4,
@@ -236,6 +240,7 @@
       "description": "Used it in a PoC, a nice alternative to RabbitMQ"
     },
     {
+      "active": false,
       "name": "DB2",
       "type": "database",
       "proficiencyLevel": 3,
@@ -245,6 +250,7 @@
       "description": "Only used it as a developer, never tried to set-up one"
     },
     {
+      "active": false,
       "name": "Oracle",
       "type": "database",
       "proficiencyLevel": 3,
@@ -254,6 +260,7 @@
       "description": "Used it in school and on some of my jobs"
     },
     {
+      "active": true,
       "name": "Mysql/MarieDB",
       "type": "database",
       "proficiencyLevel": 2,
@@ -263,6 +270,7 @@
       "description": "The first RDBMS I ever installed"
     },
     {
+      "active": true,
       "name": "MSSQL",
       "type": "database",
       "proficiencyLevel": 2,
@@ -272,6 +280,7 @@
       "description": "The preferred RDBMS when in .NET-country."
     },
     {
+      "active": true,
       "name": "CouchDB",
       "type": "database",
       "proficiencyLevel": 1,
@@ -281,6 +290,7 @@
       "description": "I love the change feeds, db replication, stability and REST API of this NoSQL DB. Also programmed in Erlang ;)"
     },
     {
+      "active": true,
       "name": "MongoDB",
       "type": "database",
       "proficiencyLevel": 2,
@@ -290,15 +300,17 @@
       "description": "Fast NoSQL"
     },
     {
+      "active": true,
       "name": "Redis",
       "type": "database",
       "proficiencyLevel": 2,
       "firstUsed": "2014",
       "lastUsed": "2018",
       "acquiredDuring": "",
-      "description": "Key-value store, used as an alternative to Memcached"
+      "description": "Key-value store with good query capabilities. Used as an alternative to Memcached"
     },
     {
+      "active": false,
       "name": "Memcached",
       "type": "database",
       "proficiencyLevel": 2,
@@ -308,15 +320,17 @@
       "description": "Key-value store cache"
     },
     {
+      "active": true,
       "name": "ElasticSearch",
       "type": "database",
       "proficiencyLevel": 3,
       "firstUsed": "2013",
-      "lastUsed": "2015",
+      "lastUsed": "2016",
       "acquiredDuring": "",
-      "description": "NoSQL and Not_Only_A_Database - actually do not use it as a DB but as superfast search engine"
+      "description": "NoSQL and Not_Only_A_Database. Do not get tempted to use it as a DB, use it as a super fast search engine backed by real persistent store"
     },
     {
+      "active": true,
       "name": "PostgreSQL",
       "type": "database",
       "proficiencyLevel": 1,
@@ -326,6 +340,7 @@
       "description": "My preferred open-source RDBMS database"
     },
     {
+      "active": true,
       "name": "Ruby on Rails(RoR)",
       "type": "web-framework",
       "proficiencyLevel": 1,
@@ -335,6 +350,7 @@
       "description": "My first meeting with Ruby and the power of metaprogramming"
     },
     {
+      "active": true,
       "name": "Phoenix",
       "type": "web-framework",
       "proficiencyLevel": 1,
@@ -344,6 +360,7 @@
       "description": "A functional web framework build on Elixir. Simplicity, stability, distribution, channels and performance baked in. Some things, just come with the language and platform(VM) itself"
     },
     {
+      "active": true,
       "name": "Vue.js",
       "type": "javascript-framework",
       "firstUsed": "2015",
@@ -353,6 +370,7 @@
       "description": "Adopted this framework very early, as it combines the simplicity of Ractive.js and a bunch of the good features from Angular, React and even Elm"
     },
     {
+      "active": true,
       "name": "Elm",
       "type": "javascript-framework",
       "firstUsed": "2017",
@@ -362,6 +380,7 @@
       "description": "After working with javascript for many years, I like the purity of a Haskell-like language and the 'no runtime errors' part"
     },
     {
+      "active": true,
       "name": "Angular",
       "type": "javascript-framework",
       "firstUsed": "2014",
@@ -371,6 +390,7 @@
       "description": "Been working with AngularJS and Angular"
     },
     {
+      "active": true,
       "name": "Ractive.js",
       "type": "javascript-framework",
       "firstUsed": "2014",
@@ -380,6 +400,7 @@
       "description": "Lightweight javascript framework. Even though I primarily use Vue.js now, I like the simplicity of Ractive.js"
     },
     {
+      "active": true,
       "name": "Ruby",
       "type": "programming-language",
       "proficiencyLevel": 1,
@@ -389,6 +410,7 @@
       "description": "My goto scripting language. Also using Crystal(https://crystal-lang.org/) combining performance and Ruby expressiveness"
     },
     {
+      "active": true,
       "name": "Elixir",
       "type": "programming-language",
       "proficiencyLevel": 1,
@@ -398,24 +420,27 @@
       "description": "My goto dynamic, functional, distributed language. Together with Erlang, Elixir opened my eyes for the world of distributed systems"
     },
     {
-      "name": "C#",
+      "active": true,
+      "name": ".NET",
       "type": "programming-language",
       "proficiencyLevel": 2,
       "firstUsed": "2007",
       "lastUsed": "2019",
       "acquiredDuring": "",
-      "description": "'Lingua franca' in the .NET world. But you should take a look at F# as well"
+      "description": "C# is 'Lingua franca' in the .NET world. But you should take a look at F# as well."
     },
     {
+      "active": true,
       "name": "Java",
       "type": "programming-language",
       "proficiencyLevel": 1,
       "firstUsed": "1998",
       "lastUsed": "2017",
       "acquiredDuring": "",
-      "description": "Learned it in school and have been using throughout my professional carrier"
+      "description": "Learned it in school and have been using Java throughout my professional carrier. The list of java technologies I have used is long and much of it outdated, so I will not try to sum it all up here"
     },
     {
+      "active": true,
       "name": "Javascript",
       "type": "programming-language",
       "proficiencyLevel": 2,
@@ -425,6 +450,7 @@
       "description": "As I have been doing a lot of frontend development, there is no way to get around this one"
     },
     {
+      "active": true,
       "name": "Typescript",
       "type": "programming-language",
       "proficiencyLevel": 3,
@@ -435,6 +461,7 @@
     },
 
     {
+      "active": true,
       "name": "Windows",
       "type": "operating-system",
       "proficiencyLevel": 2,
@@ -444,6 +471,7 @@
       "description": "Windows 3.1, 3.11 and so on :o)"
     },
     {
+      "active": true,
       "name": "OS X",
       "type": "operating-system",
       "proficiencyLevel": 2,
@@ -453,6 +481,7 @@
       "description": ""
     },
     {
+      "active": true,
       "name": "Linux",
       "type": "operating-system",
       "proficiencyLevel": 2,
@@ -476,7 +505,7 @@
       "highlights": [
         "Started the company"
       ],
-      "summary": "Quam lectus viverra temporibus nulla id, et a quis convallis cumque, vitae diam mollis consectetuer, amet justo justo justo maecenas, posuere vestibulum justo auctor erat vestibulum. Praesent laoreet sed in quisque, interdum praesent est sapien sit egestas arcu, rutrum ultrices maecenas eget class."
+      "summary": "Delivering the right software. Working on our product <b>Marangu</b>"
     },
     {
       "year": "2018",
@@ -486,7 +515,7 @@
       "companyLogo": "assets/img/ds.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master",
-      "summary": "Agile coach and responsible for the shift to more agile processes. Facilitating team workshops and introduction to scrum. Later scrum master of up to 3 teams"
+      "summary": "Agile coach and helping with the shift towards more agile processes. Facilitating team workshops and introducing scrum. Later scrum master of up to 3 teams"
     },
     {
       "year": "2016",
@@ -506,7 +535,7 @@
       "companyLogo": "assets/img/mp.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master", 
-      "summary": "Agile coach, scrum master and temporary product owner. A little front-end development in .NET(Angular & TypeScript)"
+      "summary": "Agile coach, scrum master and temporary product owner. Front-end development in .NET(Angular & TypeScript)"
     },
     {
       "year": "2016",
@@ -516,7 +545,7 @@
       "companyLogo": "assets/img/nykredit.png",
       "title": "Consultant",
       "roles": "Software Developer", 
-      "summary": "Java developer of RESTful microservices.<br> Architectural proposals, sparring with the team scrum master and product owners, concerning agile SW-development in practice"
+      "summary": "Java developer, architectural sparring. Helping the team scrum master and product owners with agile software development in practice"
     },
     {
       "year": "2016",
@@ -526,7 +555,7 @@
       "companyLogo": "assets/img/widex.png",
       "title": "Consultant",
       "roles": "Solution delivery manager, scrum master", 
-      "summary": "Responsible for implementing an more agile delivery pipeline. Scrum master for 2 teams"
+      "summary": "Responsible for implementing a more agile delivery pipeline. Scrum master for 2 teams"
     },
     {
       "year": "2015",
@@ -557,7 +586,8 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer", 
-      "summary": "My role as a Java developer, was developing web services in J2EE supporting a new loan/financing product. Using technologies, such as J2EE, WebServices, Oracle WLS"
+      "summary": "Java develolper on a new loan/financing product",
+      "full": "My role as a Java developer, was developing web services in J2EE supporting a new loan/financing product. Using technologies, such as J2EE, WebServices, Oracle WLS"
     },
     {
       "year": "2011",
@@ -567,7 +597,7 @@
       "companyLogo": null,
       "title": "Force Protection",
       "roles": "", 
-      "summary": "ISAF 12 / Herrick 15"
+      "summary": "ISAF 12 / OP Herrick 15"
     },
     {
       "year": "2011",
@@ -577,7 +607,8 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer, Business Analyst", 
-      "summary": "My role as a team lead on a 3 man team, was defining and developing the technical architecture for integrating pension payout with MS Dynamics AX through Biztalk.<br>Technologies: C# 4.0, ASP.NET, Edlund LifeCore"
+      "summary": "Team lead on a 3 man team, defining and developing the technical architecture for integrating pension payout",
+      "full": "Team lead on a 3 man team, defining and developing the technical architecture for integrating pension payout with MS Dynamics AX through Biztalk.<br>Technologies: C# 4.0, ASP.NET, Edlund LifeCore"
     },
     {
       "year": "2009",
@@ -587,7 +618,7 @@
       "companyLogo": null,
       "title": "Instructor",
       "roles": "...", 
-      "summary": "Instructor at medics course - 'Sygehjælper kursus HLS 408'"
+      "summary": "Instructor at the army medics course - 'Sygehjælper kursus HLS 408'"
     },
     {
       "year": "2007",
@@ -597,7 +628,7 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer", 
-      "summary": "Lorem ipsum..."
+      "summary": ""
     },
     {
       "year": "2006",
@@ -607,7 +638,7 @@
       "companyLogo": null,
       "title": "Developer",
       "roles": "Developer, Solution Architect", 
-      "summary": "Lorem ipsum..."
+      "summary": ""
     },
     {
       "year": "2001",
@@ -617,7 +648,9 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer, Architect", 
-      "summary": "Lorem ipsum..."
+      "summary": "Java and VB developer on a command and voice recognition project",
+      "full": "Voice and command controlled car-cockpit of the future"
+
     },
     {
       "year": "2005",
@@ -627,7 +660,7 @@
       "companyLogo": null,
       "title": "Developer",
       "roles": "Developer, Architect, Technical project manager", 
-      "summary": "Lorem ipsum..."
+      "summary": "Java developer, architect and project manager on card solutions"
     },
     {
       "year": "2008",
@@ -647,7 +680,7 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Requalification manager, TRUE test responsible", 
-      "summary": "Lorem ipsum..."
+      "summary": "Requalification manager on a new phone product and some practical testing of mobile phone Java API"
     }
 
 

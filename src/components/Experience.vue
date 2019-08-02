@@ -1,10 +1,11 @@
 <template>
   <div class="experience">
-    <h3 class="sm:text-right">{{title}}</h3>
-    <h4 class="sm:text-right">{{period}}</h4>
-    <p v-html="summary"></p>
+    <h3 class="sm:text-right">{{experience.title + ' | ' + experience.companyName}}</h3>
+    <h4 class="sm:text-right">{{experience.startDate + ' - ' + experience.endDate}}</h4>
+    <p v-html="experience.summary"></p>
   </div>
 </template>
+
 
 
 <style>
@@ -35,6 +36,6 @@
 <script>
 
 export default {
-  props: ['period', 'title','summary']
+  props: ['experience']
 }
 </script>

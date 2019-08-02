@@ -6,9 +6,10 @@
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
         <Introduction class="section" :cv="myCV" />
         <Skills class="section"/>
-        <Experiences class="section" :items="newestExperiences"/>
 
-        <ItemList class="section" :items="olderExperiences"/>
+        <Experiences class="section"/>
+
+        
       </div>
            
       <div class="line flex-none text-gray-800 text-center px-0 py-0 m-0 invisible sm:invisible md:visible lg:visible xl:visible"></div>
@@ -19,15 +20,18 @@
         
         <img class="sectionImg" src="../assets/languages.png" alt="">
         <ItemList class="section" :items="languages" title="Languages"/>
-        
+       
         <img class="sectionImg" src="../assets/courses.png" alt="">
-        <Items itemType="Courses" :items="courses" class="section" align="sm:text-left"/>
+        <ItemList class="section" :items="courses" title="Courses"/>
 
         <img class="sectionImg" src="../assets/certifications.png" alt="">
-        <Items itemType="Certifications" :items="certifications" class="section" align="sm:text-left" />
+        <ItemList class="section" :items="certifications" title="Certifications"/>
 
         <img v-if="showTechnologies" class="sectionImg" src="../assets/technologies.png" alt="">
         <ItemList v-if="showTechnologies" title="Technologies" class="section" :items="technologies"/>
+
+        <h2>Conferences</h2>
+        <h2>Teaching</h2>
 
       </div>
   
@@ -37,75 +41,20 @@
 
 </template>
 <page-query>
-query Some {
-  skills: allSkills {
-    edges {
-      node { 
-        name
-        type
-        description
-        firstUsed
-        lastUsed
+  query Technologies {
+    technologies: allSkills(filter: {active: {eq: true}}) {
+      edges {
+        node {
+          active
+          name
+          type
+          description
+          firstUsed
+          lastUsed
+        }
       }
     }
   }
-
-  oldExperiences: allExperiences(sortBy: "year", order: DESC, filter: { year: { lte: "2010" }}) {
-    edges {
-      node { 
-        companyName
-        year
-        summary
-        startDate
-  			endDate
-  			companyName
-  			companyLogo
-  			website
-  			title
-  			roles
-  			highlights
-  			summary
-      }
-    }
-  }
-
-  newestExperiences: allExperiences(sortBy: "year", order: DESC, filter: { year: { gt: "2010" }}) {
-    edges {
-      node { 
-        companyName
-        year
-        summary
-        startDate
-  			endDate
-  			companyName
-  			companyLogo
-  			website
-  			title
-  			roles
-  			highlights
-  			summary
-      }
-    }
-  }
-
-  experiences: allExperiences {
-    edges {
-      node { 
-        companyName
-        summary
-        startDate
-  			endDate
-  			companyName
-  			companyLogo
-  			website
-  			title
-  			roles
-  			highlights
-  			summary
-      }
-    }
-  }
-}
 </page-query>
 
 <script>
@@ -127,16 +76,6 @@ let skillMapper =  (edge) => {
     }
   };
 
-let itemListMapper = (edge) => {
-    return { 
-      title: edge.node.companyName, 
-      subtitle: edge.node.title, 
-      period: edge.node.startDate + " - " + edge.node.endDate, 
-      summary: edge.node.summary };
-  };
-
-  let experienceMapper = (edge) => { return edge.node; };
-
 export default {
   components: {
     Introduction,
@@ -151,15 +90,9 @@ export default {
   },
   computed: {
     technologies: function() {
-      return this.$page.skills.edges.map(skillMapper);   
+      return this.$page.technologies.edges.map(skillMapper).reverse();   
     },
 
-    olderExperiences: function() {
-      return this.$page.oldExperiences.edges.map(itemListMapper);
-    },
-    newestExperiences: function() {
-      return this.$page.newestExperiences.edges.map(experienceMapper);
-    },
     languages: function() {
       const languages = this.myCV.languages;
       let mapper = (lang) => {

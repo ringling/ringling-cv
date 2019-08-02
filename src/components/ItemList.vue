@@ -4,11 +4,11 @@
 
     <div class="w-full">
       <div class="flex flex-wrap justify-between">
-        <div class="listItem flex-none" v-for="item in items">
+        <div class="listItem flex-none" v-for="item in items" v-bind:key="item.title+item.period">
           <h3>{{item.title}}</h3>
           <h4>{{item.subtitle}}</h4>
           <p>{{item.period}}</p>
-          <a href="#" @click=" openModal(item)" class="m-0 text-xs text-blue-700" v-if="item.summary!=null">details</a>
+          <a href="#" @click=" openModal(item)" class="m-0 text-xs" v-if="item.summary!=null">details</a>
 
         </div>
       </div>
