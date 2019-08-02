@@ -9,8 +9,7 @@
         <div class="name">Software professional</div>
       </div>
 
-      
-      <div class=" px-4 py-1 m-2">        
+      <div class="px-4 py-1 m-2">        
         <Portrait/>        
       </div>
       <div class="text-gray-700 text-center px-4 py-1 m-2">
@@ -20,19 +19,15 @@
         <div class="title">Curriculum Vitae</div>
       </div>
       
-
     </div>
     
-    
   </header>
-
 
   <div class="layout">
     <slot/>
   </div>
 
   <footer class="footer flex justify-center align-bottom h-32">
-    
     <span class="inline-block align-baseline self-end">Nærum Hovedgade 15 st th D, 2850 Nærum | +45 61 69 93 51 | <a href="mailto:thomas@ringling.info">thomas@ringling.info</a> | <a target="_blank" href="http://www.ringling.info">www.ringling.info</a> </span>
   </footer>
 
@@ -63,20 +58,16 @@ header {
 }
 
 footer {
-  /* background: linear-gradient(to top, rgb(183, 231, 144), white); */
+  /* background: linear-gradient(to top, #AECAEF, white); */
   padding-bottom: 10px;
   @apply text-gray-700 p-2 text-sm;
 }
-
-
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .name {
   background: transparent;

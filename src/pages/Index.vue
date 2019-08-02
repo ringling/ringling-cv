@@ -6,10 +6,7 @@
       <div class="flex-1 text-gray-700 px-10 py-1 m-1">
         <Introduction class="section" :cv="myCV" />
         <Skills class="section"/>
-
         <Experiences class="section"/>
-
-        
       </div>
            
       <div class="line flex-none text-gray-800 text-center px-0 py-0 m-0 invisible sm:invisible md:visible lg:visible xl:visible"></div>
@@ -138,7 +135,6 @@ export default {
 }
 
 .line {
-
   background: linear-gradient(to bottom, #AECAEF, #EFAED6);
   width: 3px;
 }

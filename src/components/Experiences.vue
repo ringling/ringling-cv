@@ -3,13 +3,14 @@
 
 <div class="experiences">
 
+
     <img class="sectionImg" src="../assets/experience.png" alt="">
     <h2 class="sm:text-right">Experience</h2>
     <Experience :experience="experience" v-for="experience in newExperiences" v-bind:key="expKey(experience)" />
   
   </div>
 
-  <ItemList class="section" :items="olderExp"/>
+  <ItemList class="section" :items="olderExperiences"/>
   
 </div>
   
@@ -66,7 +67,9 @@ let itemListMapper = (edge) => {
       title: edge.node.companyName, 
       subtitle: edge.node.title, 
       period: edge.node.startDate + " - " + edge.node.endDate, 
-      summary: edge.node.summary };
+      summary: edge.node.summary ,
+      full: edge.node.full
+      };
   };
 
 export default {
@@ -80,11 +83,10 @@ export default {
     }
   },
   computed: {
-
     newExperiences: function() {
       return this.$static.newExperiences.edges.map((edge) => { return edge.node; });
     },
-    olderExp: function() {
+    olderExperiences: function() {
       return this.$static.oldExperiences.edges.map(itemListMapper);
     }
   }

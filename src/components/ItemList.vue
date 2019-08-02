@@ -53,11 +53,14 @@ export default {
 
   .listItem > h3 {
     text-transform: uppercase;
+    display: inline;
+
     @apply text-left mb-1 text-gray-700 text-sm font-semibold;
   }
 
    .listItem > h4  {
      text-transform: uppercase;
+     word-wrap: break-word;
      @apply text-left mb-1 text-gray-600 text-xs font-semibold;
    }
 

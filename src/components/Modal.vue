@@ -21,7 +21,8 @@
 
           <div class="modal-body">
             <slot name="body">
-              {{item.summary}}
+              <span v-if="item.full" v-html="item.full"></span>
+              <span v-if="!item.full" v-html="item.summary"></span>          
             </slot>
           </div>
 

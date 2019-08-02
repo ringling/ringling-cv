@@ -99,14 +99,20 @@
       },
       {
         "type": "conferences",
-        "title": "Elixir Conf Europe 2018",
+        "title": "Agile Coach Camp 2017",
         "description": "",
         "documentation": ""
       },
       {
         "type": "conferences",
-        "title": "Agile Coach Camp 2017",
-        "description": "",
+        "title": "Elixir Conf Europe 2017",
+        "description": "Barcelona",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "Elixir Conf Europe 2016",
+        "description": "Berlin",
         "documentation": ""
       },
       {
@@ -130,19 +136,25 @@
       {
         "type": "certifications",
         "title": "Professional Scrum Master - PSM I",
-        "description": "Issued May 2013",
+        "description": "scrum.org - Issued May 2013",
         "documentation": ""
       },
       {
         "type": "certifications",
-        "title": "Agile Foundation – Leadership Focus - DSDM",
-        "description": "Issued Apr 2012",
+        "title": "Agile Foundation – Leadership Focus",
+        "description": "DSDM - Issued Apr 2012",
         "documentation": ""
       },
       {
         "type": "courses",
         "title": "Product Owner 360",
         "description": "2016 and june 2019 - goAgile",
+        "documentation": ""
+      },
+      {
+        "type": "courses",
+        "title": "Angular 2.0",
+        "description": "May 2016 - Trifork",
         "documentation": ""
       },
       {
@@ -163,7 +175,6 @@
         "description": "2016 - Future Factory",
         "documentation": ""
       },
-      
       {
         "type": "courses",
         "title": "Agile Project Leadership",
@@ -535,6 +546,7 @@
       "companyLogo": "assets/img/mp.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master", 
+      "technologies":["C#", "Angular"],
       "summary": "Agile coach, scrum master and temporary product owner. Front-end development in .NET(Angular & TypeScript)"
     },
     {
@@ -544,7 +556,8 @@
       "companyName": "Nykredit",
       "companyLogo": "assets/img/nykredit.png",
       "title": "Consultant",
-      "roles": "Software Developer", 
+      "roles": "Software Developer",
+      "technologies":["Java","Angular", "ActiveMQ","RESTful microservices","Oracle WLS","JBoss Wildfly"],
       "summary": "Java developer, architectural sparring. Helping the team scrum master and product owners with agile software development in practice"
     },
     {
@@ -555,6 +568,7 @@
       "companyLogo": "assets/img/widex.png",
       "title": "Consultant",
       "roles": "Solution delivery manager, scrum master", 
+      "technologies":["Azure Document DB", "C#","MS SQL","CouchDB"],
       "summary": "Responsible for implementing a more agile delivery pipeline. Scrum master for 2 teams"
     },
     {
@@ -564,7 +578,8 @@
       "companyName": "Macellum",
       "companyLogo": "assets/img/macellum.png",
       "title": "Partner",
-      "roles": "Developer", 
+      "roles": "Developer",
+      "technologies":["Ruby on Rails", "RactiveJS","PostgreSQL","CouchDB","Elixir"],
       "summary": "Software solution for the fishing market"
     },
     {
@@ -574,6 +589,7 @@
       "companyName": "Lokalebasen.dk A/S",
       "companyLogo": "assets/img/lb.png",
       "title": "Consultant",
+      "technologies":["Ruby","Ruby on Rails","Redis","PostgreSQL","MongoDB","CouchDB","Elastic Search","KnockoutJS","AngularJS","RactiveJS","Coffeescript","RabbitMQ","NGinx","Docker","CoreOS","Elixir"],
       "roles": "Product Owner, Scrum Master, Architect, Software Developer", 
       "summary": "Developer, architect, product owner, scrum master and daily manager of the development team",
       "full": "<h5>Product Owner</h5><h6>Jul 2014 – May 2015</h6><p>My role was primarily Product Owner, but I also acted as SW architect and daily manager of the development team. Hereunder performing recruitment of further staff and coaching of the new scrum master. I furthermore facilitated all workshops within the company</p><h5>Projectmanager/Scrum Master</h5><h6>Feb 2012 – Jul 2014</h6>Scrum master/Project manager/Facilitator: Responsible for introducing the agile transformation via SCRUM to the development team and the rest of the company.<br>SW architect: Designing the new distributed architecture in cooperation with the dev team.<br>Developer: Ruby(on Rails), Elixir/Erlang"
@@ -586,6 +602,7 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer", 
+      "technologies":["Java","J2EE","WebServices","Oracle WLS"],
       "summary": "Java develolper on a new loan/financing product",
       "full": "My role as a Java developer, was developing web services in J2EE supporting a new loan/financing product. Using technologies, such as J2EE, WebServices, Oracle WLS"
     },
@@ -606,9 +623,10 @@
       "companyName": "Forca",
       "companyLogo": null,
       "title": "Consultant",
-      "roles": "Developer, Business Analyst", 
+      "roles": "Developer, Business Analyst",
+      "technologies":["C# 4.0","ASP.NET","Edlund LifeCore","web forms"],
       "summary": "Team lead on a 3 man team, defining and developing the technical architecture for integrating pension payout",
-      "full": "Team lead on a 3 man team, defining and developing the technical architecture for integrating pension payout with MS Dynamics AX through Biztalk.<br>Technologies: C# 4.0, ASP.NET, Edlund LifeCore"
+      "full": ""
     },
     {
       "year": "2009",
@@ -627,8 +645,9 @@
       "companyName": "Nykredit",
       "companyLogo": null,
       "title": "Consultant",
-      "roles": "Developer", 
-      "summary": ""
+      "roles": "Developer",
+      "technologies":["Java","JSP","J2EE"],
+      "summary": "My role as a developer, was frontend development of internal administration systems."
     },
     {
       "year": "2006",
@@ -638,7 +657,8 @@
       "companyLogo": null,
       "title": "Developer",
       "roles": "Developer, Solution Architect", 
-      "summary": ""
+      "technologies":["C# 2.0","ASP.NET","Biztalk", "SAP", "MIIS"],
+      "summary": "Developing on the Omada process modeling product"
     },
     {
       "year": "2001",
@@ -649,6 +669,7 @@
       "title": "Consultant",
       "roles": "Developer, Architect", 
       "summary": "Java and VB developer on a command and voice recognition project",
+      "technologies":["Java","VB","MS COM","MS DCOM","JSP"],
       "full": "Voice and command controlled car-cockpit of the future"
 
     },
@@ -660,6 +681,7 @@
       "companyLogo": null,
       "title": "Developer",
       "roles": "Developer, Architect, Technical project manager", 
+      "technologies":["Java","J2EE","Oracle DB","Oracle AS", "JSP","Java Servlets"],
       "summary": "Java developer, architect and project manager on card solutions"
     },
     {
@@ -669,7 +691,8 @@
       "companyName": "Forca",
       "companyLogo": null,
       "title": "Consultant",
-      "roles": "Developer", 
+      "roles": "Developer",
+      "technologies":["C# 4.0","ASP.NET","Edlund LifeCore","web forms"],
       "summary": "Lorem ipsum..."
     },
     {
@@ -680,6 +703,7 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Requalification manager, TRUE test responsible", 
+      "technologies":["Java","J2ME"],
       "summary": "Requalification manager on a new phone product and some practical testing of mobile phone Java API"
     }
 
