@@ -4,7 +4,6 @@
     <h2 class="sm:text-right mb-4"> Skills</h2>
     <p class="mb-4">A short little self-assessment of my skills</p>
 
-
     <div class="w-full">
       <div class="flex flex-wrap justify-between">
         <Skill level="100" title="agile principles"/>

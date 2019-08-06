@@ -16,8 +16,9 @@ p {
 }
 
 .sectionImg {
-  max-height: 150px;
+  max-height: 200px;
 }
+
 
 a {
   @apply text-blue-600
