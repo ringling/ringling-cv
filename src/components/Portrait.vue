@@ -1,7 +1,7 @@
 <template>
   <div class="portraitImg">
     <figure class="snip">
-      <g-image class="portraitImg" src="~/assets/portrait.png"/>
+      <g-image class="portraitImage" src="~/assets/portrait.png"/>
       <figcaption>
         <h2>Thomas <span> Ringling</span></h2>
       </figcaption>
@@ -11,8 +11,35 @@
 
 <script>
 
+
+
 export default {
-  
+  mounted:function(){
+    var options = {
+      root: null,
+      rootMargin: '-100px 0px 0px 0px',
+      threshold: 1.0
+    }
+
+    // debugger
+    
+    var callback = function(entries, observer) { 
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting)
+        {
+          entry.target.firstChild.className="snip"
+        }
+        else
+        {
+          entry.target.firstChild.className="snip hover"
+        }
+      });
+    };
+    var observer = new IntersectionObserver(callback, options);
+    var target = document.querySelector('.portraitImg');
+    observer.observe(target);
+  }
 }
 </script>
 
