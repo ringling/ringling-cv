@@ -97,4 +97,8 @@ export default {
   .experiences > h2 {
     @apply mb-4;
   }
+
+  li {
+    list-style-type: disc;
+  }
 </style>
