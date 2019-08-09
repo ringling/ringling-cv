@@ -1,7 +1,6 @@
 <template>
   <div class="experience">
 
-
     <h3 class="sm:text-right">{{experience.title + ' | ' + experience.companyName}}</h3>
     <h4 class="sm:text-right">{{experience.startDate + ' - ' + experience.endDate}}</h4>
     <p v-html="experience.summary"></p>
@@ -33,6 +32,10 @@
 </script>
 
 <style>
+
+  .experience {
+    @apply mt-4;
+  }
 
   .experience > div > p > h5 {
     @apply mb-2 mt-2 text-gray-700 text-sm font-semibold;
