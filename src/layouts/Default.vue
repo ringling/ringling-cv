@@ -54,11 +54,11 @@ body {
 }
 header {
   padding-top: 10px;
-  background: linear-gradient(to bottom, #AECAEF, white);
+  background: linear-gradient(to bottom, rgb(156,184,204), white);
 }
 
 footer {
-  /* background: linear-gradient(to top, #AECAEF, white); */
+  /* background: linear-gradient(to top, rgb(156,184,204), white); */
   padding-bottom: 10px;
   @apply text-gray-700 p-2 text-sm;
 }
@@ -71,9 +71,9 @@ img {
 
 .name {
   background: transparent;
-  min-width: 350px;
+  min-width: 320px;
   padding: 1rem;
-  border: 2px solid #AECAEF;
+  border: 2px solid rgb(156,184,204);
   @apply text-2xl;
 }
 

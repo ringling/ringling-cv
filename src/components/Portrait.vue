@@ -20,8 +20,6 @@ export default {
       rootMargin: '-100px 0px 0px 0px',
       threshold: 1.0
     }
-
-    // debugger
     
     var callback = function(entries, observer) { 
       entries.forEach(entry => {
@@ -44,11 +42,6 @@ export default {
 </script>
 
 <style>
-/* Included color classes.. 
-	.red 
-	.blue 
-	.yellow 
-*/
 
 figure.snip {
   position: relative;
@@ -60,7 +53,7 @@ figure.snip {
   max-width: 310px;
   max-height: 220px;
   width: 100%;
-  background: #7994b8;
+  background: rgb(156,184,204);
   color: #ffffff;
   text-align: center;
   /* border: 1px solid #7994b8; */

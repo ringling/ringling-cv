@@ -135,7 +135,7 @@ export default {
 }
 
 .line {
-  background: linear-gradient(to bottom, #AECAEF, #EFAED6);
+  background: linear-gradient(to bottom, rgb(156,184,204), #EFAED6);
   width: 3px;
 }
 </style>

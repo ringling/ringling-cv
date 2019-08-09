@@ -53,7 +53,7 @@ a:hover {
   &::after {
     left: 50%;
     width: 100vw;
-    background: #AECAEF;
+    background: rgb(156,184,204);
     transform: translateX(-50%);
     top: 0;
     z-index: -2;
