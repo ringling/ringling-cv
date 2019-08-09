@@ -27,3 +27,36 @@ a {
 a:hover {
   @apply text-blue-800
 }
+
+.title {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+
+  &::before, &::after {
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  
+  &::before {
+    background: white;
+    right: -20PX;
+    left: -20PX;
+    height: 101%;
+
+    z-index: -1;
+
+    
+  }
+  &::after {
+    left: 50%;
+    width: 100vw;
+    background: #AECAEF;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -2;
+  }
+
+}

@@ -11,7 +11,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'keywords',
-    content: 'CV,Curriculum Vitae,Thomas Ringling,Scrum Master,Product Owner,Developer,Elixir,Software,Programmer,Agile,XP,s'
+    content: 'CV,Curriculum Vitae,Thomas Ringling,Scrum Master,Product Owner,Developer,Elixir,Software,Programmer,Agile,XP,VueJS'
   })
 }
 
