@@ -3,9 +3,7 @@
 
     <img class="sectionImg" src="../assets/exams.png" alt="">
     <h2>Education</h2>
-    <Education title="Diploma in Information Technology" school="IT University, Copenhagen" period="2002 - 2005"/>
-    <Education title="Datamatician" school="Lyngby uddannelsescenter" period="1998 - 2000"/>
-    <Education title="High school" school="Deutsches Gymnasium für Nordschleswig" period="1988 - 1991"/>
+    <Education :title="education.studyType" :school="education.institution" :period="education.startDate + ' - ' +education.endDate" v-for="education in educations"/>
   </div>
 </template>
 
@@ -16,9 +14,31 @@ import Education from '~/components/Education.vue'
 export default {
   components: {
     Education
+  },
+  computed: {
+    educations: function() {
+      return this.$static.educations.edges.map((edge) => { return edge.node; });
+    }
   }
 }
 </script>
+
+<static-query>
+query Educations {
+  educations: allEducations(sortBy: "endDate", order: DESC) {
+    edges {
+      node { 
+        institution
+        area
+        studyType
+        startDate
+        endDate
+      }
+    }
+  }
+}
+</static-query>
+
 <style>
 
   .educations > h2 {

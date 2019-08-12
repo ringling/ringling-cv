@@ -18,6 +18,10 @@ module.exports = function (api) {
       typeName: 'Experiences'
     })
 
+    const educationContentType = store.addContentType({
+      typeName: 'Educations'
+    })
+
     for (const skill of cv.skills) {
       skillContentType.addNode({
         active: skill.active,
@@ -45,6 +49,16 @@ module.exports = function (api) {
         highlights: exp.highlights,
         summary: exp.summary,
         full: exp.full
+      })
+    }
+
+    for (const educ of cv.educations) {
+      educationContentType.addNode({
+        institution: educ.institution,
+        area: educ.area,
+        studyType: educ.studyType,
+        startDate: educ.startDate,
+        endDate: educ.endDate
       })
     }
   })
