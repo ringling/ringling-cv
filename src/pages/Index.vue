@@ -29,7 +29,9 @@
 
         <img class="sectionImg" src="../assets/conference.png" alt="">
         <ItemList class="section" :items="conferences" title="Conferences"/>
-        <h2>Teaching</h2>
+
+        <img class="sectionImg" src="../assets/teaching.png" alt="">
+         <ItemList class="section" :items="teaching" title="Teaching"/>
 
       </div>
   
@@ -106,6 +108,14 @@ export default {
         return { title: lang.language, subtitle: lang.fluency };
       }
       return languages.map(mapper); 
+    },
+    teaching: function() {
+      const achievements = this.myCV.achievements.list;
+      let filter = (ach) => { return ach.type == "teaching"; }
+      let mapper = (course) => {
+        return { title: course.title, subtitle: course.description };
+      }
+      return achievements.filter(filter).map(mapper);
     },
     courses: function() {
       const achievements = this.myCV.achievements.list;

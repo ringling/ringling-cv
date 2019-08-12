@@ -73,6 +73,7 @@
     }
   ],
   "achievements": {
+
     "_description":"Contains a list of additional information about the various achievements of an individual, such as participation to conferences, workshops, memberships to organisations, list of publications, etc.",
     "_types": [
         "honors_awards",
@@ -191,13 +192,13 @@
         "type": "teaching",
         "period": "2015-2017",
         "title": "TDD practices in OO",
-        "description": "TDD with Java and/or C#"
+        "description": "TDD with Java and C#"
       },
       {
         "type": "teaching",
         "period": "2015-2018",
         "title": "Coderetreat",
-        "description": "Facilitation of 'Coderetreat' events(https://www.coderetreat.org/)"
+        "description": "Facilitation of events"
       },
       {
         "type": "teaching",
@@ -208,7 +209,7 @@
       {
         "type": "teaching",
         "period": "2016-2019",
-        "title": "Agile principles and software development practices",
+        "title": "Agile principles and development practices",
         "description": "XP, Scrum, Kanban, TDD, BDD ..."
       },
       {
@@ -224,6 +225,7 @@
         "description": "Instructor"
       }
     ]
+  
   },
   "skills": [
     {

@@ -3,7 +3,7 @@
 
     <img class="sectionImg" src="../assets/exams.png" alt="">
     <h2>Education</h2>
-    <Education :title="education.studyType" :school="education.institution" :period="education.startDate + ' - ' +education.endDate" v-for="education in educations"/>
+    <Education :title="education.studyType" :school="education.institution" :period="education.startDate + ' - ' +education.endDate" v-for="education in educations" :key="education.studyType"/>
   </div>
 </template>
 
