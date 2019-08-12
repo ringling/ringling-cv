@@ -27,6 +27,7 @@
         <img v-if="showTechnologies" class="sectionImg" src="../assets/technologies.png" alt="">
         <ItemList v-if="showTechnologies" title="Technologies" class="section" :items="technologies"/>
 
+        <img class="sectionImg" src="../assets/conference.png" alt="">
         <ItemList class="section" :items="conferences" title="Conferences"/>
         <h2>Teaching</h2>
 
