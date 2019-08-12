@@ -94,13 +94,13 @@
       {
         "type": "conferences",
         "title": "Agile Coach Camp 2019",
-        "description": "",
+        "description": "Denmark - co-organizer",
         "documentation": ""
       },
       {
         "type": "conferences",
         "title": "Agile Coach Camp 2017",
-        "description": "",
+        "description": "Denmark - co-organizer",
         "documentation": ""
       },
       {
@@ -118,13 +118,19 @@
       {
         "type": "conferences",
         "title": "Agile Coach Camp 2016",
-        "description": "",
+        "description": "Denmark - co-organizer",
         "documentation": ""
       },
       {
         "type": "conferences",
         "title": "Agile Coach Camp 2015",
-        "description": "",
+        "description": "Denmark",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
+        "title": "XP Days 2015",
+        "description": "Benelux",
         "documentation": ""
       },
       {

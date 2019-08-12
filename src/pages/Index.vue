@@ -27,7 +27,7 @@
         <img v-if="showTechnologies" class="sectionImg" src="../assets/technologies.png" alt="">
         <ItemList v-if="showTechnologies" title="Technologies" class="section" :items="technologies"/>
 
-        <h2>Conferences</h2>
+        <ItemList class="section" :items="conferences" title="Conferences"/>
         <h2>Teaching</h2>
 
       </div>
@@ -86,6 +86,15 @@ export default {
     this.showTechnologies = this.$route.query.technologies;
   },
   computed: {
+
+    conferences: function() {
+      const achievements = this.myCV.achievements.list;
+      let filter = (ach) => { return ach.type == "conferences"; }
+      let mapper = (cert) => {
+        return { title: cert.title, subtitle: cert.description };
+      }
+      return achievements.filter(filter).map(mapper);
+    },
     technologies: function() {
       return this.$page.technologies.edges.map(skillMapper).reverse();   
     },
