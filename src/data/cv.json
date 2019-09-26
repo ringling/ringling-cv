@@ -514,6 +514,19 @@
   "experiences": [
     {
       "year": "2019",
+      "startDate": "August 2019",
+      "endDate": "Oktober 2019",
+      "companyName": "Dropboy",
+      "companyLogo": "assets/img/dropboy.png",
+      "website": "http://dropboy.io",
+      "title": "Tech lead",
+      "roles": "Tech lead, Software Developer",
+      "highlights": [],
+      "technologies":["NodeJS", "Typescript","React"],
+      "summary": "Maturing SW department, and doing technical assessments"
+    },
+    {
+      "year": "2019",
       "startDate": "June 2019",
       "endDate": "Present",
       "companyName": "xwave",
