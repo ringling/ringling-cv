@@ -19,7 +19,6 @@ p {
   max-height: 200px;
 }
 
-
 a {
   @apply text-blue-600
 }
@@ -59,4 +58,70 @@ a:hover {
     z-index: -2;
   }
 
+}
+
+.print-skill {
+  display: none;
+}
+
+.print-name {
+  @apply text-3xl;
+  display: none;
+}
+
+
+@media print {
+  body {
+    background-color: transparent;
+    font-size: 80%;
+  }
+  
+  
+  @page { 
+    margin: 2cm; 
+  }
+  
+  footer {
+    padding-bottom: 0.5cm;
+  }
+  
+  .sectionx {
+    page-break-inside: avoid;
+  }
+  
+  .olderExperiences, .listItem, .experience, .education {
+    page-break-inside: avoid;
+  }
+  
+  /* .snip {
+    visibility: hidden;
+    display: none;
+  } */
+  
+  .print-name, .print-skill {
+    display: inherit;
+  }
+  
+  figcaption, a, button {
+    visibility: hidden;
+    display: none;
+  }
+  
+  figure.snip img {
+    opacity: 1;
+  }
+  
+  .sectionImg {
+    opacity: 0.7;
+    max-height: 100px;
+  }
+  
+  .name {
+    border: none;
+  }
+  
+  .email-link, .www-link {
+    visibility: inherit;
+    display: inline;
+  }
 }

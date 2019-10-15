@@ -409,7 +409,7 @@
       "description": "Been working with AngularJS and Angular"
     },
     {
-      "active": true,
+      "active": false,
       "name": "Ractive.js",
       "type": "javascript-framework",
       "firstUsed": "2014",
@@ -474,9 +474,31 @@
       "type": "programming-language",
       "proficiencyLevel": 3,
       "firstUsed": "2017",
-      "lastUsed": "2017",
+      "lastUsed": "2019",
       "acquiredDuring": "",
       "description": "Java/C# in the frontend"
+    },
+
+    {
+      "active": true,
+      "name": "React",
+      "type": "javascript-framework",
+      "proficiencyLevel": 3,
+      "firstUsed": "2019",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": ""
+    },
+
+    {
+      "active": true,
+      "name": "NodeJS",
+      "type": "javascript-runtime",
+      "proficiencyLevel": 4,
+      "firstUsed": "2014",
+      "lastUsed": "2019",
+      "acquiredDuring": "",
+      "description": ""
     },
 
     {

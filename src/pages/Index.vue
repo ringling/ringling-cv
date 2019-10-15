@@ -31,7 +31,7 @@
         <ItemList class="section" :items="conferences" title="Conferences"/>
 
         <img class="sectionImg" src="../assets/teaching.png" alt="">
-         <ItemList class="section" :items="teaching" title="Teaching"/>
+        <ItemList class="section" :items="teaching" title="Teaching"/>
 
       </div>
   

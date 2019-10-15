@@ -3,6 +3,9 @@
   <div class="skill">
     <div class="skill-text">
       {{title}}
+      <div class="print-skill">
+        {{level}}/100
+      </div>
     </div>
 
     <div class="w-full bg-gray-400 mb-2 flex-grow">

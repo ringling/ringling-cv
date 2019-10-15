@@ -10,7 +10,7 @@
   
   </div>
 
-  <ItemList class="section" :items="olderExperiences"/>
+  <ItemList class="section olderExperiences" :items="olderExperiences"/>
   
 </div>
   

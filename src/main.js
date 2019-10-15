@@ -5,8 +5,16 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 import '~/assets/styles.css'
 
+
 export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
+
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   media: "print",
+  //   href: 'print.css'
+  // })
+
 
 
   head.meta.push({
