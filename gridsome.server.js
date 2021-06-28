@@ -5,22 +5,21 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const cv = require('./src/data/cv.json')
+const cv = require("./src/data/cv.json");
 
-module.exports = function (api) {
+module.exports = function(api) {
+  api.loadSource((store) => {
+    const skillContentType = store.addCollection({
+      typeName: "Skills",
+    });
 
-  api.loadSource(store => {
-    const skillContentType = store.addContentType({
-      typeName: 'Skills'
-    })
+    const experienceContentType = store.addCollection({
+      typeName: "Experiences",
+    });
 
-    const experienceContentType = store.addContentType({
-      typeName: 'Experiences'
-    })
-
-    const educationContentType = store.addContentType({
-      typeName: 'Educations'
-    })
+    const educationContentType = store.addCollection({
+      typeName: "Educations",
+    });
 
     for (const skill of cv.skills) {
       skillContentType.addNode({
@@ -32,8 +31,8 @@ module.exports = function (api) {
         firstUsed: skill.firstUsed,
         lastUsed: skill.lastUsed,
         acquiredDuring: skill.acquiredDuring,
-        description: skill.description
-      })
+        description: skill.description,
+      });
     }
 
     for (const exp of cv.experiences) {
@@ -48,8 +47,8 @@ module.exports = function (api) {
         roles: exp.roles,
         highlights: exp.highlights,
         summary: exp.summary,
-        full: exp.full
-      })
+        full: exp.full,
+      });
     }
 
     for (const educ of cv.educations) {
@@ -58,11 +57,11 @@ module.exports = function (api) {
         area: educ.area,
         studyType: educ.studyType,
         startDate: educ.startDate,
-        endDate: educ.endDate
-      })
+        endDate: educ.endDate,
+      });
     }
-  })
+  });
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api
-  })
-}
+  });
+};
