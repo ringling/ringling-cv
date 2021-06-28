@@ -9,8 +9,8 @@
         <div class="name">Software professional<br></div>
       </div>
 
-      <div class="px-4 py-1 m-2">        
-        <Portrait/>        
+      <div class="px-4 py-1 m-2">
+        <Portrait/>
       </div>
       <div class="text-gray-900 text-center px-4 py-1 m-2">
         <h1 class="print-name">Thomas Ringling</h1>
@@ -21,9 +21,9 @@
       <div class="text-gray-700 text-center px-4 py-1 m-2">
         <div class="title">Curriculum Vitae</div>
       </div>
-      
+
     </div>
-    
+
   </header>
 
   <div class="layout">
@@ -97,7 +97,7 @@ img {
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }

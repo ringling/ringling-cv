@@ -135,6 +135,12 @@
       },
       {
         "type": "certifications",
+        "title": "Certified LeSS Practitioner",
+        "description": "Issued June 2021",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
         "title": "Certified SAFe Agilist",
         "description": "Issued June 2016",
         "documentation": ""
@@ -476,7 +482,6 @@
       "acquiredDuring": "",
       "description": "Java/C# in the frontend"
     },
-
     {
       "active": true,
       "name": "React",
@@ -487,7 +492,6 @@
       "acquiredDuring": "",
       "description": ""
     },
-
     {
       "active": true,
       "name": "NodeJS",
@@ -498,7 +502,6 @@
       "acquiredDuring": "",
       "description": ""
     },
-
     {
       "active": true,
       "name": "Windows",
@@ -532,16 +535,49 @@
   ],
   "experiences": [
     {
+      "year": "2021",
+      "startDate": "November 2020",
+      "endDate": "May 2021",
+      "companyName": "PFA",
+      "companyLogo": "assets/img/pfa.png",
+      "website": "http://pfa.dk",
+      "title": "Agile Coach",
+      "roles": "Agile Coach",
+      "highlights": [],
+      "technologies": [],
+      "summary": "Agile uplift"
+    },
+    {
+      "year": "2021",
+      "startDate": "June 2021",
+      "endDate": "Present",
+      "companyName": "PFA",
+      "companyLogo": "assets/img/pfa.png",
+      "website": "http://pfa.dk",
+      "title": "Business Consultant",
+      "roles": "",
+      "highlights": [],
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Matlibplot"
+      ],
+      "summary": "Data analysis, Architecture etc"
+    },
+    {
       "year": "2020",
       "startDate": "November 2019",
-      "endDate": "Present",
+      "endDate": "Oktober 2020",
       "companyName": "PFA",
       "companyLogo": "assets/img/pfa.png",
       "website": "http://pfa.dk",
       "title": "Automation tester",
       "roles": "Tester",
       "highlights": [],
-      "technologies": ["Edlund LivNET", "BDD"],
+      "technologies": [
+        "Edlund LivNET",
+        "BDD"
+      ],
       "summary": "Help PFA move towards more test automation"
     },
     {
@@ -554,7 +590,11 @@
       "title": "Tech lead",
       "roles": "Tech lead, Software Developer",
       "highlights": [],
-      "technologies": ["NodeJS", "Typescript", "React"],
+      "technologies": [
+        "NodeJS",
+        "Typescript",
+        "React"
+      ],
       "summary": "Maturing SW department, and doing technical assessments"
     },
     {
@@ -566,7 +606,9 @@
       "website": "http://company.com",
       "title": "Partner",
       "roles": "Software Developer",
-      "highlights": ["Started the company"],
+      "highlights": [
+        "Started the company"
+      ],
       "summary": "Delivering the right software. Working on our product <b>Marangu</b>"
     },
     {
@@ -597,7 +639,10 @@
       "companyLogo": "assets/img/mp.png",
       "title": "Consultant",
       "roles": "Agile Coach and Scrum Master",
-      "technologies": ["C#", "Angular"],
+      "technologies": [
+        "C#",
+        "Angular"
+      ],
       "summary": "Agile coach, scrum master and temporary product owner. Front-end development in .NET(Angular & TypeScript)"
     },
     {
@@ -626,7 +671,12 @@
       "companyLogo": "assets/img/widex.png",
       "title": "Consultant",
       "roles": "Solution delivery manager, scrum master",
-      "technologies": ["Azure Document DB", "C#", "MS SQL", "CouchDB"],
+      "technologies": [
+        "Azure Document DB",
+        "C#",
+        "MS SQL",
+        "CouchDB"
+      ],
       "summary": "Responsible for implementing a more agile delivery pipeline. Scrum master for 2 teams"
     },
     {
@@ -683,7 +733,12 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer",
-      "technologies": ["Java", "J2EE", "WebServices", "Oracle WLS"],
+      "technologies": [
+        "Java",
+        "J2EE",
+        "WebServices",
+        "Oracle WLS"
+      ],
       "summary": "Java develolper on a new loan/financing product",
       "full": "My role as a Java developer, was developing web services in J2EE supporting a new loan/financing product. Using technologies, such as J2EE, WebServices, Oracle WLS"
     },
@@ -705,7 +760,12 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer, Business Analyst",
-      "technologies": ["C# 4.0", "ASP.NET", "Edlund LifeCore", "web forms"],
+      "technologies": [
+        "C# 4.0",
+        "ASP.NET",
+        "Edlund LifeCore",
+        "web forms"
+      ],
       "summary": "Team lead on a 3 man team, defining and developing the technical architecture for integrating pension payout",
       "full": ""
     },
@@ -727,7 +787,11 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer",
-      "technologies": ["Java", "JSP", "J2EE"],
+      "technologies": [
+        "Java",
+        "JSP",
+        "J2EE"
+      ],
       "summary": "My role as a developer, was frontend development of internal administration systems."
     },
     {
@@ -738,7 +802,13 @@
       "companyLogo": null,
       "title": "Developer",
       "roles": "Developer, Solution Architect",
-      "technologies": ["C# 2.0", "ASP.NET", "Biztalk", "SAP", "MIIS"],
+      "technologies": [
+        "C# 2.0",
+        "ASP.NET",
+        "Biztalk",
+        "SAP",
+        "MIIS"
+      ],
       "summary": "Developing on the Omada process modeling product"
     },
     {
@@ -750,7 +820,13 @@
       "title": "Consultant",
       "roles": "Developer, Architect",
       "summary": "Java and VB developer on a command and voice recognition project",
-      "technologies": ["Java", "VB", "MS COM", "MS DCOM", "JSP"],
+      "technologies": [
+        "Java",
+        "VB",
+        "MS COM",
+        "MS DCOM",
+        "JSP"
+      ],
       "full": "Voice and command controlled car-cockpit of the future"
     },
     {
@@ -779,7 +855,12 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Developer",
-      "technologies": ["C# 4.0", "ASP.NET", "Edlund LifeCore", "web forms"],
+      "technologies": [
+        "C# 4.0",
+        "ASP.NET",
+        "Edlund LifeCore",
+        "web forms"
+      ],
       "summary": "My role as a developer, was developing<ul><li>Campain site</li><li>New functionality in admin UI</li></ul>"
     },
     {
@@ -790,18 +871,28 @@
       "companyLogo": null,
       "title": "Consultant",
       "roles": "Requalification manager, TRUE test responsible",
-      "technologies": ["Java", "J2ME"],
+      "technologies": [
+        "Java",
+        "J2ME"
+      ],
       "summary": "Requalification manager on a new phone product and some practical testing of mobile phone Java API"
     }
   ],
   "interests": [
     {
       "name": "Music",
-      "keywords": ["Nature", "Guitar"]
+      "keywords": [
+        "Nature",
+        "Guitar"
+      ]
     },
     {
       "name": "Training",
-      "keywords": ["Martial Arts", "Crossfit", "Physical training"]
+      "keywords": [
+        "Martial Arts",
+        "Crossfit",
+        "Physical training"
+      ]
     }
   ],
   "references": [
