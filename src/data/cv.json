@@ -46,7 +46,11 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent"
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Elementary proficiency"
     }
   ],
   "educations": [
@@ -93,6 +97,12 @@
     "list": [
       {
         "type": "conferences",
+        "title": "Agile Coach Camp 2022",
+        "description": "Denmark",
+        "documentation": ""
+      },
+      {
+        "type": "conferences",
         "title": "Agile Coach Camp 2019",
         "description": "Denmark - co-organizer",
         "documentation": ""
@@ -131,6 +141,18 @@
         "type": "conferences",
         "title": "XP Days 2015",
         "description": "Benelux",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
+        "title": "Introduction to Quantum Computing for Everyone",
+        "description": "2021 - edX / ChicagoX",
+        "documentation": ""
+      },
+      {
+        "type": "certifications",
+        "title": "QTM1x: The Quantum Internet and Quantum Computers: How Will They Change the World?",
+        "description": "2021 - edX / DelftX",
         "documentation": ""
       },
       {
