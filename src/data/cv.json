@@ -558,19 +558,6 @@
   "experiences": [
     {
       "year": "2021",
-      "startDate": "November 2020",
-      "endDate": "May 2021",
-      "companyName": "PFA",
-      "companyLogo": "assets/img/pfa.png",
-      "website": "http://pfa.dk",
-      "title": "Agile Coach",
-      "roles": "Agile Coach",
-      "highlights": [],
-      "technologies": [],
-      "summary": "Agile uplift"
-    },
-    {
-      "year": "2021",
       "startDate": "June 2021",
       "endDate": "Present",
       "companyName": "PFA",
@@ -581,10 +568,24 @@
       "highlights": [],
       "technologies": [
         "Python",
+        "Nuxt3/Vue.js",
         "Pandas",
         "Matlibplot"
       ],
-      "summary": "Data analysis, Architecture etc"
+      "summary": "Part of a program office. Doing data analysis, architecture etc"
+    },
+    {
+      "year": "2021",
+      "startDate": "November 2020",
+      "endDate": "May 2021",
+      "companyName": "PFA",
+      "companyLogo": "assets/img/pfa.png",
+      "website": "http://pfa.dk",
+      "title": "Agile Coach",
+      "roles": "Agile Coach",
+      "highlights": [],
+      "technologies": [],
+      "summary": "Agile uplift"
     },
     {
       "year": "2020",
