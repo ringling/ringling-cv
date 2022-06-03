@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.17",
-    "node-sass": "^6.0.1"
+    "node-sass": "^7.0.1"
   }
 }
